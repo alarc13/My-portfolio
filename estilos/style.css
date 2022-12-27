@@ -15,8 +15,8 @@ body{
   padding: 0;
   inline-size: 100%;
 }
-/* header */
 
+/* header */
 .header-container{
     font-size: 0.875rem;
     display: flex;
@@ -97,8 +97,8 @@ h1{
 .container-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 24px;
-    row-gap: 15px;
+    column-gap: 0.875rem;
+    row-gap: 0.938rem;
     margin-inline: 9.375rem;
     margin-top: 2.8rem;
     height: 110vh;
@@ -116,8 +116,8 @@ h1{
     justify-content: space-between;
 }
 .image{
- width: 100%;
- height: 16.625rem;
+    width: 100%;
+    height: 16.625rem;
  
 }
 
@@ -149,7 +149,7 @@ h1{
 	display:block;
 	position: relative;
 	top:0;
-	width:0px;
+	width:0rem;
 	height:0.8%;
 	background-color:#000000;
 	transition: all .3s ease-in-out;
@@ -187,7 +187,7 @@ h1{
 .card-6,
 .card-7,
 .card-8 {
-padding-top: 32px;
+    padding-top: 2rem;
 /* border: 6px solid rebeccapurple; */
 }
 
@@ -256,12 +256,12 @@ h2{
 
 
 .aside-footer-hp{
-    margin-top: 94px;
+    margin-top: 5.875rem;
 }
+/*end about me and contact */
 
 
  /* slider hand paints*/
-
 .slider-hp {
     margin-top: 8rem;
     background-color: #fff;
@@ -374,30 +374,30 @@ h2{
     visibility: visible;
     z-index: 10;
 }
- /* end slider hand paints*/
+/* end slider hand paints*/
 
- /* slide ph */
+/* slide photography */
 label{cursor: pointer;}
 
-/* Contenedor para centrar */
+/*contenedor centrar */
 .container-center{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-/* Input */
+/* input */
 input{display: none}
 
 
-/* Slider */
-.Carrusels{
-    margin-top: 40px;
-    height: 500px;
+/* slider photography*/
+.carrusels{
+    margin-top: 2.5rem;
+    height: 31.25rem;
     width: 100%;
     position: relative;
     overflow-x: hidden;
 }
-.Carrusel{
+.carrusel{
   height: 100%;
   width: 100%;
   position: absolute;
@@ -405,26 +405,26 @@ input{display: none}
   overflow-y: hidden;
   transition: all .5s ease;
 }
-/* Configuracion de elementos individuales */
-.Carrusels .Carrusel:nth-child(1) {background-image: url(https://unsplash.it/500/300/);}
-.Carrusels .Carrusel:nth-child(2) {background-image: url(https://unsplash.it/501/301/);}
-.Carrusels .Carrusel:nth-child(3) {background-image: url(https://unsplash.it/502/302/);}
-/* Estado 1 */
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
-/* Estado 2 */
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
-/* Estado 3 */
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+/*elementos individuales */
+.carrusels .carrusel:nth-child(1) {background-image: url(https://unsplash.it/500/500/);}
+.carrusels .carrusel:nth-child(2) {background-image: url(https://unsplash.it/501/400/);}
+.carrusels .carrusel:nth-child(3) {background-image: url(https://unsplash.it/500/200/);}
+/*estado 1 */
+#slider1:checked ~ .carrusels .carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#slider1:checked ~ .carrusels .carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#slider1:checked ~ .carrusels .carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+/*estado 2 */
+#slider2:checked ~ .carrusels .carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#slider2:checked ~ .carrusels .carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#slider2:checked ~ .carrusels .carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+/*estado 3 */
+#slider3:checked ~ .carrusels .carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#slider3:checked ~ .carrusels .carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#slider3:checked ~ .carrusels .carrusel:nth-of-type(3) {transform: translate(0%, 0);}
 
 
-/* Flechas */
-.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+/*flechas */
+.carrusels .arrow-left, .carrusels .arrow-right{
   position: absolute;
   height: 100%;
   width: 2em;
@@ -433,36 +433,35 @@ input{display: none}
   display: none;
   user-select: none;
 }
-.Carrusels .ArrowLeft{left: 0px;}
-.Carrusels .ArrowRight{right: 0px;}
-/* Configuracion de flechas individuales */
-#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
-#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
-#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+.carrusels .arrow-left{left: 0px;}
+.carrusels .arrow-right{right: 0px;}
 
+#slider1:checked ~ .carrusels .arrow1{display: flex;}
+#slider2:checked ~ .carrusels .arrow2{display: flex;}
+#slider3:checked ~ .carrusels .arrow3{display: flex;}
 
-/* Selectores */
-.Selectors {
-  width: 60px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
+.selectors {
+    width: 3.75rem;
+    padding: 0.938rem;
+    display: flex;
+    justify-content: space-between;
 }
-.Selectors .Selector {
-  background-color: #FFF;
-  height: 10px;
-  width: 10px;
-  display: block;
-  border-radius: 5px;
+.selectors .selector {
+    background-color: rgb(0, 0, 0);
+    height: 0.625rem;
+    width: 0.625rem;
+    display: block;
+    border-radius: 0.313rem;
 }
-/* Condicionales para botón inferior */
-#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
-#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
-#Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
+/* botones inferior */
+    #slider1:checked ~ .selectors .selector:nth-of-type(1) {background-color: #999999;}
+    #slider2:checked ~ .selectors .selector:nth-of-type(2) {background-color: #999999;}
+    #slider3:checked ~ .selectors .Selector:nth-of-type(3) {background-color: #999999;}
+    
  /* end slide ph */
 
 
-/*  responsive tablet */
+/*responsive tablet */
  @media only screen and (max-width: 875px) {
     .header-container{
             margin-inline: 2.375rem;
@@ -476,7 +475,7 @@ input{display: none}
     .info-author{
             display: flex;
             margin-top: 0.25rem;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 300;
     }
         /*H1*/
@@ -486,16 +485,17 @@ input{display: none}
     h1{
         margin-inline: 2.375rem;
     }
-    /*H1--*/
-    /*about me and contact */
+/*H1--*/
+/*about me and contact */
     .aboutme,
     .contact{
            margin-inline: 2.375rem;
            margin-block: 5rem;
-    }/*end about me and contact */
+    }
+/*end about me and contact */
     }
 
- /* diseño responsive aplicado a landing -paintings- y -hand paintings */
+/* diseño responsive aplicado a landing -paintings- y -hand paintings */
 
  @media (max-width: 767px) {
 
@@ -520,7 +520,7 @@ input{display: none}
     .info-author{
         display: flex;
         margin-top: 0.25rem;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 300;
     }
 
@@ -538,7 +538,7 @@ input{display: none}
     /*filtros grid*/
     .nav-filters{
         margin-inline: 2.375rem;
-        margin-top: 70px;
+        margin-top: 4.375rem;
 
     }
     .filters{
@@ -553,7 +553,7 @@ input{display: none}
 
     /* slide ph */
     .Carrusels{
-        height: 300px;
+        height: 18.75rem;
         width: 100%;
     }
     /* end slide ph */
@@ -581,7 +581,7 @@ input{display: none}
     .slider-hp {
         height: 18em;
         width: 22em;
-        margin: 87px;
+        margin: 5.438rem;
     }
     .slider-hp img {
         height: 18em;
@@ -616,7 +616,7 @@ input{display: none}
         text-align: center; 
    }
     .author{
-        margin-top: 20px;
+        margin-top: 1.25rem;
         font-size: 0.90rem;
         font-family: var(--fontSecundary);
         letter-spacing: 0.188rem;
@@ -624,10 +624,10 @@ input{display: none}
     .info-author{
         display: block;
         text-align: center;
-        margin-top: 7px;
+        margin-top: 0.438rem;
     }
     .about{
-        margin-top: 18px;
+        margin-top: 1.125rem;
         text-decoration: underline;
     }
     .about-link br{
@@ -635,7 +635,7 @@ input{display: none}
     } 
   /*H1*/
     .container-intro{
-        margin-top: 28px;
+        margin-top: 1.75rem;
         font-size: 1.4rem;
     }  
     .signing{
@@ -649,7 +649,7 @@ input{display: none}
     }
      /* slide hand paints */
      .aside-footer-hp{
-        margin-top: -6px;
+        margin-top: -0.375rem;
      }
      .slider-hp {
         height: 10em;
@@ -666,7 +666,7 @@ input{display: none}
  @media (max-width: 355px) {
      /* slide hand paints */
      .aside-footer-hp{
-        margin-top: 12px;
+        margin-top: 0.75rem;
 
      }
      .slider-hp {
