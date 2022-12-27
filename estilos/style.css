@@ -460,8 +460,34 @@ input{display: none}
     
  /* end slide ph */
 
+/* RESPONSIVE 
+    DESIGN */
+
+
+ @media only screen and (max-width: 1400px){
+    .aside-index{
+     margin-top: 25rem;
+ }
+ }
+
 
  @media only screen and (max-width: 1024px){
+
+/* grid index */
+.container-grid{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.875rem;
+    margin-inline: 9rem;
+}
+.image{
+    height: 22.625rem;
+}
+/* aside index */
+.aside-index{
+    margin-top: 93.75;
+}
+
+
  /* slider photography*/
 .carrusels{
     width: 60%;
@@ -493,6 +519,22 @@ input{display: none}
         margin-inline: 2.375rem;
     }
 /*H1--*/
+/* grid index */
+.container-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 2rem;
+}
+.image{
+    height: 24.625rem;
+}
+/* grid index */
+
+/* aside index */
+.aside-index{
+    margin-top: 103.125rem;
+}
+
+
 /*about me and contact */
     .aboutme,
     .contact{
@@ -557,9 +599,8 @@ input{display: none}
         line-height:1.5em;
         font-size: 1rem;
     }
-
-
     /*end filtros grid--*/
+
     /* carrusel photography */
     .carrusels{
         height: 38.25rem;
@@ -585,6 +626,21 @@ input{display: none}
  /* end slider hand paints*/
 }
 @media (max-width: 580px) {
+     /* grid index */
+     .container-grid{
+        column-gap: 0.875rem;
+        margin-inline: 2rem;
+    }
+    .image{
+        height: 15.625rem;
+    }
+    /* grid index */
+
+    /* aside index */
+    .aside-index{
+        margin-top: 68.75rem;
+    }
+    
     /* slide hand paints */
     .slider-hp {
         height: 18em;
@@ -604,6 +660,16 @@ input{display: none}
 }
 
 @media (max-width: 460px) {
+
+     /* grid index */
+    .image{
+        height: 12.625rem;
+    }
+       /* aside index */
+       .aside-index{
+        margin-top: 56.25rem;
+    }
+
     /* slide hand paints */
     .container-center{
         overflow-x: hidden;
@@ -664,6 +730,26 @@ input{display: none}
     .signing p{
         text-align: center;
     }
+      /* grid index */
+      .image{
+        height: 10.625rem;
+    }
+           /* aside index */
+       .aside-index{
+        margin-top: 56.25rem;
+    }
+       /* aside index */
+       .aside-index{
+        margin-top: 50rem;
+    }
+    
+    .title-grid{
+        font-size: 0.8rem;
+    }
+    .description-grid{
+        font-size: 0.6rem;
+    }
+    
      /* slide hand paints */
      .aside-footer-hp{
         margin-top: -0.375rem;
@@ -681,6 +767,20 @@ input{display: none}
 
 }
  @media (max-width: 355px) {
+
+      /* grid index */
+      .image{
+        height: 8.625rem;
+    }
+ 
+    .title-grid{
+        font-size: 0.6rem;
+    }
+    .description-grid{
+        font-size: 0.5rem;
+    }
+ 
+    
      /* slide hand paints */
      .aside-footer-hp{
         margin-top: 0.75rem;
