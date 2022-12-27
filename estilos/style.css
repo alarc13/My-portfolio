@@ -1,3 +1,4 @@
+/* desktop */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
@@ -255,29 +256,24 @@ h2{
 
 
 .aside-footer-hp{
-    margin-top: 890px;
+    margin-top: 94px;
 }
 
 
  /* slider hand paints*/
 
 .slider-hp {
-    margin-top: 14rem;
+    margin-top: 8rem;
     background-color: #fff;
     box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
                 0 3px 1px hsla(0,0%,100%,.40),
                 0 -1px 1px 2px hsla(0,0%,0%,.1);
     height: 38.75em;
-    left: 28%;
-
     padding: .5em;
-    position: absolute;
+    position: relative;
     top: 50%;
     width: 40em;
 }
-
-
-
 .slider-hp:before {
     background-color: #22130c;
     bottom: -2.5em;
@@ -294,9 +290,6 @@ h2{
     top: -2.5em;
     z-index: -1;
 }
-
-
-
 .slider-hp:after {
     background-color: #fff5e5;
     bottom: -1.5em;
@@ -312,9 +305,6 @@ h2{
     top: -1.5em;
     z-index: -1;
 }
-
-
-
 .slider-hp li {
     box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
     list-style:none;
@@ -323,8 +313,6 @@ h2{
 .slider-hp input {
     display: none;
 }
-
-
 .slider-hp label {
     background-color: #111;
     background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
@@ -373,8 +361,6 @@ h2{
 .slider-hp:hover li:nth-child(4) label {
     left: 5em;
 }
-
-
 .slider-hp img {
     height: 38.75em;
     opacity: 0;
@@ -391,44 +377,10 @@ h2{
  /* end slider hand paints*/
 
  /* slide ph */
- /* #slide-ph {
-    height: 100vh;
-    overflow-x: auto;
-    display: flex;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;  
-      scroll-snap-align: start;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-  }
-  
-  .buttons-slideph {
-    margin: 0 auto;
-    position: absolute;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    box-shadow: #000;
-  }
-  
-  .a-ph {
-    padding: 1rem;
-    margin: .5rem;
-    color: white;
-    text-decoration: none;
-  } */
-
-
- /* slide ph */
 label{cursor: pointer;}
 
 /* Contenedor para centrar */
-.ContainerCenter{
+.container-center{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -509,76 +461,152 @@ input{display: none}
 #Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
  /* end slide ph */
 
- /* vista mobile */
+
+/*  responsive tablet */
+ @media only screen and (max-width: 875px) {
+    .header-container{
+            margin-inline: 2.375rem;
+        
+    }
+    .author{
+            font-size: 0.75rem;
+            font-family: var(--fontSecundary);
+            letter-spacing: 0.188rem;
+    }
+    .info-author{
+            display: flex;
+            margin-top: 0.25rem;
+            font-size: 14px;
+            font-weight: 300;
+    }
+        /*H1*/
+    .container-intro{
+        font-size: 2rem;
+    }
+    h1{
+        margin-inline: 2.375rem;
+    }
+    /*H1--*/
+    /*about me and contact */
+    .aboutme,
+    .contact{
+           margin-inline: 2.375rem;
+           margin-block: 5rem;
+    }/*end about me and contact */
+    }
+
+ /* diseño responsive aplicado a landing -paintings- y -hand paintings */
 
  @media (max-width: 767px) {
 
-/* header */
-.header-container{
-    margin-inline: 2.375rem;
+    /* header */
+    .header-container{
+        margin-inline: 2.375rem;
 
+    }
+    .author{
+        font-size: 0.75rem;
+        font-family: var(--fontSecundary);
+        letter-spacing: 0.188rem;
+    }
+    /* .author br{
+        display: block;
+        line-height: 5em;
+    } */
+
+    .about-link br{
+        display: block;
+    } 
+    .info-author{
+        display: flex;
+        margin-top: 0.25rem;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    /* end header--*/
+
+    /*H1*/
+    .container-intro{
+        font-size: 2rem;
+    }
+    h1{
+        margin-inline: 2.375rem;
+    }
+    /*H1--*/
+
+    /*filtros grid*/
+    .nav-filters{
+        margin-inline: 2.375rem;
+        margin-top: 70px;
+
+    }
+    .filters{
+        display: block;
+        text-align: center;
+        line-height:1.5em;
+        font-size: 1rem;
+    }
+
+
+    /*end filtros grid--*/
+
+    /* slide ph */
+    .Carrusels{
+        height: 300px;
+        width: 100%;
+    }
+    /* end slide ph */
+
+    /*about me and contact */
+    .aboutme,
+    .contact{
+        margin-inline: 2.375rem;
+        margin-block: 5rem;
+    }/*end about me and contact */
+
+    /* slide hand paints */
+.slider-hp {
+    height: 22em;
+    width: 30em;
 }
-.author{
-    font-size: 0.75rem;
-    font-family: var(--fontSecundary);
-    letter-spacing: 0.188rem;
+.slider-hp img {
+    height: 22em;
+    width: 30em;
 }
-/* .author br{
-    display: block;
-    line-height: 5em;
-} */
-
-.about-link br{
-    display: block;
-} 
-.info-author{
-    display: flex;
-    margin-top: 0.25rem;
-    font-size: 14px;
-    font-weight: 300;
+ /* end slider hand paints*/
 }
-
-/* end header--*/
-
-/*H1*/
-.container-intro{
-    font-size: 2rem;
-}
-h1{
-    margin-inline: 2.375rem;
-}
-/*H1--*/
-
-/*filtros grid*/
-.nav-filters{
-    margin-inline: 2.375rem;
-    margin-top: 70px;
-
-}
-.filters{
-    display: block;
-    text-align: center;
-    line-height:1.5em;
-    font-size: 1rem;
+@media (max-width: 580px) {
+    /* slide hand paints */
+    .slider-hp {
+        height: 18em;
+        width: 22em;
+        margin: 87px;
+    }
+    .slider-hp img {
+        height: 18em;
+        width: 22em;
+    }
+     /* end slider hand paints*/ 
 }
 
+@media (max-width: 460px) {
+    /* slide hand paints */
+    .container-center{
+        overflow-x: hidden;
+   
+      }
+    .slider-hp {
+        height: 14em;
+        width: 18em;
 
-/*end filtros grid--*/
-
- /* slide ph */
- .Carrusels{
-     height: 300px;
-     width: 100%;
- }
-  /* end slide ph */
-
-/*about me and contact */
-.aboutme,
-.contact{
-    margin-inline: 2.375rem;
-    margin-block: 5rem;
-}/*end about me and contact */
-
+    }
+    .slider-hp img {
+        height: 14em;
+        width: 18em;
+    }
+   
+     /* end slider hand paints*/ 
 }
 
 @media (max-width: 420px) {
@@ -619,6 +647,39 @@ h1{
     .signing p{
         text-align: center;
     }
- }
+     /* slide hand paints */
+     .aside-footer-hp{
+        margin-top: -6px;
+     }
+     .slider-hp {
+        height: 10em;
+        width: 14em;
 
-  /* end vista mobile */
+    }
+    .slider-hp img {
+        height: 10em;
+        width: 14em;
+    }
+     /* end slider hand paints*/ 
+
+}
+ @media (max-width: 355px) {
+     /* slide hand paints */
+     .aside-footer-hp{
+        margin-top: 12px;
+
+     }
+     .slider-hp {
+        height: 8em;
+        width: 12em;
+
+    }
+    .slider-hp img {
+        height: 8em;
+        width: 12em;
+    }
+     /* end slider hand paints*/ 
+
+}
+
+/* end d-sesponsive */
