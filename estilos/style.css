@@ -392,8 +392,8 @@ input{display: none}
 /* slider photography*/
 .carrusels{
     margin-top: 2.5rem;
-    height: 31.25rem;
-    width: 100%;
+    height: 50.25rem;
+    width: 40%;
     position: relative;
     overflow-x: hidden;
 }
@@ -406,9 +406,9 @@ input{display: none}
   transition: all .5s ease;
 }
 /*elementos individuales */
-.carrusels .carrusel:nth-child(1) {background-image: url(https://unsplash.it/501/400/);}
-.carrusels .carrusel:nth-child(2) {background-image: url(https://unsplash.it/501/400/);}
-.carrusels .carrusel:nth-child(3) {background-image: url(https://unsplash.it/500/200/);}
+.carrusels .carrusel:nth-child(1) {background-image: url(../images/dinamarca.jpg);}
+.carrusels .carrusel:nth-child(2) {background-image: url(../images/paris.jpg);}
+.carrusels .carrusel:nth-child(3) {background-image: url(../images/dinamarca_2.jpg);}
 /*estado 1 */
 #slider1:checked ~ .carrusels .carrusel:nth-of-type(1) {transform: translate(0%, 0);}
 #slider1:checked ~ .carrusels .carrusel:nth-of-type(2) {transform: translate(100%, 0);}
@@ -461,6 +461,13 @@ input{display: none}
  /* end slide ph */
 
 
+ @media only screen and (max-width: 1024px){
+ /* slider photography*/
+.carrusels{
+    width: 60%;
+}
+}
+
 /*responsive tablet */
  @media only screen and (max-width: 875px) {
     .header-container{
@@ -492,8 +499,11 @@ input{display: none}
            margin-inline: 2.375rem;
            margin-block: 5rem;
     }
-/*end about me and contact */
-    }
+ /* slider photography*/
+ .carrusels{
+    width: 70%;
+}
+}
 
 /* diseño responsive aplicado a landing -paintings- y -hand paintings */
 
@@ -550,13 +560,11 @@ input{display: none}
 
 
     /*end filtros grid--*/
-
-    /* slide ph */
-    .Carrusels{
-        height: 18.75rem;
-        width: 100%;
+    /* carrusel photography */
+    .carrusels{
+        height: 38.25rem;
+        width: 74%;
     }
-    /* end slide ph */
 
     /*about me and contact */
     .aboutme,
@@ -588,6 +596,11 @@ input{display: none}
         width: 22em;
     }
      /* end slider hand paints*/ 
+     /* carrusel ph */
+     .carrusels{
+        height: 36.25rem;
+        width: 78%;
+    }
 }
 
 @media (max-width: 460px) {
@@ -605,8 +618,12 @@ input{display: none}
         height: 14em;
         width: 18em;
     }
-   
      /* end slider hand paints*/ 
+      /* carrusel photography */
+    .carrusels{
+        height: 28.25rem;
+        width: 78%;
+    }
 }
 
 @media (max-width: 420px) {
