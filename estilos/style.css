@@ -406,7 +406,7 @@ input{display: none}
   transition: all .5s ease;
 }
 /*elementos individuales */
-.carrusels .carrusel:nth-child(1) {background-image: url(https://unsplash.it/500/500/);}
+.carrusels .carrusel:nth-child(1) {background-image: url(https://unsplash.it/501/400/);}
 .carrusels .carrusel:nth-child(2) {background-image: url(https://unsplash.it/501/400/);}
 .carrusels .carrusel:nth-child(3) {background-image: url(https://unsplash.it/500/200/);}
 /*estado 1 */
