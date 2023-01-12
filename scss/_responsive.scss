@@ -14,14 +14,17 @@
             height: 22.625rem;
         }
     }
-    /* aside index */
-    .aside-index{
+    /* aside  */
+    .aside{
         margin-top: 97.75rem;
     }
-    //  /* slider photography* cuando este hecha la pagina/
-    // .carrusels{
-    //     width: 60%;
-    // }
+    //galeria fotografia
+    .galeria{
+        margin-inline: 9rem;
+        grid-template-columns: repeat(3, auto);
+        gap: 14px;
+
+    }   
 }
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
@@ -50,8 +53,8 @@
 /*H1--*/
 
 // nav
-.nav_filters{
-margin-left: 100px;
+.nav-filters{
+    margin-inline: 2.375rem;
 }
 
 /* grid index */
@@ -76,6 +79,18 @@ margin-left: 100px;
         margin-block: 5rem;
     }
 }
+.aside-hp{
+    margin-top: 103.125rem;
+    .aboutme{
+        margin-inline: 2.375rem;
+        margin-block: 5rem;
+    }
+    .contact{
+        margin-inline: 2.375rem;
+        margin-block: 5rem;
+    }
+}
+
 
 //  /* slider photography* cuando este hecha pagina/
 //  .carrusels{

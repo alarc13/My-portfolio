@@ -180,41 +180,78 @@ body {
   margin-block: 2.5rem;
   font-size: 0.875rem; }
 
-.aside-index .line-divider {
+.aside .line-divider {
   margin-top: 4.75rem;
   width: all;
   height: 0.063rem;
   background-color: #E5E5E5; }
 
-.aside-index .aboutme {
+.aside .aboutme {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-index .aboutme h2 {
+  .aside .aboutme h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-index .aboutme .about-description {
+  .aside .aboutme .about-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
 
-.aside-index .contact {
+.aside .contact {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-index .contact h2 {
+  .aside .contact h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-index .contact .contact-description {
+  .aside .contact .contact-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
-    .aside-index .contact .contact-description p {
+    .aside .contact .contact-description p {
       margin: 0;
       margin-top: 0.25rem;
       color: black; }
-    .aside-index .contact .contact-description .rrssig {
+    .aside .contact .contact-description .rrssig {
       display: flex;
       gap: 0.875rem; }
-      .aside-index .contact .contact-description .rrssig .flecha {
+      .aside .contact .contact-description .rrssig .flecha {
+        width: 1.875rem; }
+
+.aside-hp .line-divider {
+  margin-top: 4.75rem;
+  width: all;
+  height: 0.063rem;
+  background-color: #E5E5E5; }
+
+.aside-hp .aboutme {
+  margin-inline: 9.375rem;
+  margin-block: 5rem; }
+  .aside-hp .aboutme h2 {
+    font-family: "Josefin Sans", monospace;
+    font-weight: 500;
+    letter-spacing: 0.188rem; }
+  .aside-hp .aboutme .about-description {
+    font-family: "Roboto", monospace;
+    font-weight: 300; }
+
+.aside-hp .contact {
+  margin-inline: 9.375rem;
+  margin-block: 5rem; }
+  .aside-hp .contact h2 {
+    font-family: "Josefin Sans", monospace;
+    font-weight: 500;
+    letter-spacing: 0.188rem; }
+  .aside-hp .contact .contact-description {
+    font-family: "Roboto", monospace;
+    font-weight: 300; }
+    .aside-hp .contact .contact-description p {
+      margin: 0;
+      margin-top: 0.25rem;
+      color: black; }
+    .aside-hp .contact .contact-description .rrssig {
+      display: flex;
+      gap: 0.875rem; }
+      .aside-hp .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
 @media only screen and (max-width: 1400px) {
@@ -229,9 +266,13 @@ body {
     margin-inline: 9rem; }
     .container-grid .image {
       height: 22.625rem; }
-  /* aside index */
-  .aside-index {
-    margin-top: 97.75rem; } }
+  /* aside  */
+  .aside {
+    margin-top: 97.75rem; }
+  .galeria {
+    margin-inline: 9rem;
+    grid-template-columns: repeat(3, auto);
+    gap: 14px; } }
 
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
@@ -252,8 +293,8 @@ body {
     .container-intro h1 {
       margin-inline: 2.375rem; }
   /*H1--*/
-  .nav_filters {
-    margin-left: 100px; }
+  .nav-filters {
+    margin-inline: 2.375rem; }
   /* grid index */
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -268,5 +309,13 @@ body {
       margin-inline: 2.375rem;
       margin-block: 5rem; }
     .aside-index .contact {
+      margin-inline: 2.375rem;
+      margin-block: 5rem; }
+  .aside-hp {
+    margin-top: 103.125rem; }
+    .aside-hp .aboutme {
+      margin-inline: 2.375rem;
+      margin-block: 5rem; }
+    .aside-hp .contact {
       margin-inline: 2.375rem;
       margin-block: 5rem; } }
