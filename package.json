@@ -1,7 +1,7 @@
 {
   "name": "-sass-portfolio-migrando",
   "version": "1.0.0",
-  "description": "raquel portfolio migrando a sass",
+  "description": "raquel portfolio PreEntrega2Alarcon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,12 +12,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alarc13/PreEntrega2Alarcon.git"
+    "url": "git+https://github.com/alarc13/PreEntrega3Alarcon.git"
   },
   "bugs": {
-    "url": "https://github.com/alarc13/PreEntrega2Alarcon/issues"
+    "url": "https://github.com/alarc13/PreEntrega3Alarcon/issues"
   },
-  "homepage": "https://github.com/alarc13/PreEntrega2Alarcon#readme",
+  "homepage": "https://github.com/alarc13/PreEntrega3Alarcon#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
