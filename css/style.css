@@ -172,3 +172,57 @@ body {
       gap: 0.875rem; }
       .aside-index .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
+
+@media only screen and (max-width: 1400px) {
+  .aside-index {
+    margin-top: 25rem; } }
+
+@media only screen and (max-width: 1024px) {
+  /* grid index */
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.875rem;
+    margin-inline: 9rem; }
+    .container-grid .image {
+      height: 22.625rem; }
+  /* aside index */
+  .aside-index {
+    margin-top: 97.75rem; } }
+
+/*responsive tablet */
+@media only screen and (max-width: 875px) {
+  .header-container {
+    margin-inline: 2.375rem; }
+    .header-container .author {
+      font-size: 0.75rem;
+      font-family: var(--fontSecundary);
+      letter-spacing: 0.188rem; }
+    .header-container .info-author {
+      display: flex;
+      margin-top: 0.25rem;
+      font-size: 0.875rem;
+      font-weight: 300; }
+  /*H1*/
+  .container-intro {
+    font-size: 2rem; }
+    .container-intro h1 {
+      margin-inline: 2.375rem; }
+  /*H1--*/
+  .nav_filters {
+    margin-left: 100px; }
+  /* grid index */
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 2rem; }
+    .container-grid .image {
+      height: 24.625rem; }
+  /* grid index */
+  /* aside index */
+  .aside-index {
+    margin-top: 103.125rem; }
+    .aside-index .aboutme {
+      margin-inline: 2.375rem;
+      margin-block: 5rem; }
+    .aside-index .contact {
+      margin-inline: 2.375rem;
+      margin-block: 5rem; } }
