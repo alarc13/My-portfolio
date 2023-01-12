@@ -16,8 +16,9 @@
             width: 250px;
             height: 250px;
             overflow: hidden;
-        }
+        }      
 }
+
 .modal{
     position: fixed;
     top: 0;
@@ -28,19 +29,17 @@
     display: none; /*display none quita la pripiedad, no es visible pero sigue en el dom. */
     justify-content: center;
     align-items: center;
-    .visible{
-        display: flex;
+    a{
+    display: block;
+    color: white;
+    font-size: 3em;
+    margin: 0 20px;
     }
-    
-    .modal a{
-        display: block;
-        color: white;
-        font-size: 3em;
-        margin: 0 20px;
-    }
-    
-    .modal img{
-        display: block;
+    img{
+    display: block;
     }
 }
 
+.visible{
+    display: flex;
+}
