@@ -64,12 +64,14 @@
                 top: 0;
                 left: 30px;
                 transition: transform .4s ease-in;
-                .paint-info .title {
+                .paint-info{
+                    .title {
                     font-size: 1.125rem;
-                    font-family: var(--fontPrimary);
+                    font-family: $fontPrimary;
                     font-weight: 300;
+                    }
                 .subtitle {
-                        font-family: var(--fontSecundary);
+                        font-family: $fontSecundary;
                         font-weight: 700;
                         text-transform: uppercase;
                         font-size: 0.75rem;
@@ -89,6 +91,6 @@
     }
       
     #item-3:checked ~ .description-paint #test  {
-        transform: translateY(-78px);
+        transform: translateY(-76px);
     }
   }

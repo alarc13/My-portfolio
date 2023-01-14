@@ -234,21 +234,21 @@ body {
         transition: transform .4s ease-in; }
         .container-paints .description-paint .description-part .info-area .paint-info .title {
           font-size: 1.125rem;
-          font-family: var(--fontPrimary);
+          font-family: "Roboto", monospace;
           font-weight: 300; }
-          .container-paints .description-paint .description-part .info-area .paint-info .title .subtitle {
-            font-family: var(--fontSecundary);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.125rem;
-            margin-top: 4px; }
+        .container-paints .description-paint .description-part .info-area .paint-info .subtitle {
+          font-family: "Josefin Sans", monospace;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          letter-spacing: 0.125rem;
+          margin-top: 4px; }
   .container-paints #item-2:checked ~ .description-paint #test {
     transform: translateY(0); }
   .container-paints #item-2:checked ~ .description-paint #test {
     transform: translateY(-40px); }
   .container-paints #item-3:checked ~ .description-paint #test {
-    transform: translateY(-78px); }
+    transform: translateY(-76px); }
 
 .signing {
   display: flex;
@@ -294,41 +294,51 @@ body {
       .aside .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
-.aside-photography .line-divider {
+.aside-photography .line-divider,
+.aside-hand-paints .line-divider {
   margin-top: 4.75rem;
   width: all;
   height: 0.063rem;
   background-color: #E5E5E5; }
 
-.aside-photography .aboutme {
+.aside-photography .aboutme,
+.aside-hand-paints .aboutme {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-photography .aboutme h2 {
+  .aside-photography .aboutme h2,
+  .aside-hand-paints .aboutme h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-photography .aboutme .about-description {
+  .aside-photography .aboutme .about-description,
+  .aside-hand-paints .aboutme .about-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
 
-.aside-photography .contact {
+.aside-photography .contact,
+.aside-hand-paints .contact {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-photography .contact h2 {
+  .aside-photography .contact h2,
+  .aside-hand-paints .contact h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-photography .contact .contact-description {
+  .aside-photography .contact .contact-description,
+  .aside-hand-paints .contact .contact-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
-    .aside-photography .contact .contact-description p {
+    .aside-photography .contact .contact-description p,
+    .aside-hand-paints .contact .contact-description p {
       margin: 0;
       margin-top: 0.25rem;
       color: black; }
-    .aside-photography .contact .contact-description .rrssig {
+    .aside-photography .contact .contact-description .rrssig,
+    .aside-hand-paints .contact .contact-description .rrssig {
       display: flex;
       gap: 0.875rem; }
-      .aside-photography .contact .contact-description .rrssig .flecha {
+      .aside-photography .contact .contact-description .rrssig .flecha,
+      .aside-hand-paints .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
 @media only screen and (max-width: 1400px) {
