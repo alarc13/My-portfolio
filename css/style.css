@@ -173,6 +173,83 @@ body {
 .visible {
   display: flex; }
 
+.container-paints {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .container-paints input[type=radio] {
+    display: none; }
+  .container-paints .cards-paint {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px; }
+    .container-paints .cards-paint .card-paint {
+      position: absolute;
+      width: 30%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform .4s ease;
+      cursor: pointer; }
+      .container-paints .cards-paint .card-paint img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47); }
+  .container-paints #item-1:checked ~ .cards-paint #paint-3, .container-paints #item-2:checked ~ .cards-paint #paint-1, .container-paints #item-3:checked ~ .cards-paint #paint-2 {
+    transform: translatex(-40%) scale(0.8);
+    opacity: .4;
+    z-index: 0; }
+  .container-paints #item-1:checked ~ .cards-paint #paint-2, .container-paints #item-2:checked ~ .cards-paint #paint-3, .container-paints #item-3:checked ~ .cards-paint #paint-1 {
+    transform: translatex(40%) scale(0.8);
+    opacity: .4;
+    z-index: 0; }
+  .container-paints #item-1:checked ~ .cards-paint #paint-1, .container-paints #item-2:checked ~ .cards-paint #paint-2, .container-paints #item-3:checked ~ .cards-paint #paint-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1; }
+  .container-paints .description-paint {
+    margin-top: 400px;
+    border-radius: 8px;
+    min-width: 320px;
+    padding: 16px 10px;
+    box-shadow: 0px 0px 1px 0px rgba(81, 81, 81, 0.47); }
+    .container-paints .description-paint .description-part {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 36px;
+      overflow: hidden; }
+      .container-paints .description-paint .description-part .info-area {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 30px;
+        transition: transform .4s ease-in; }
+        .container-paints .description-paint .description-part .info-area .paint-info .title {
+          font-size: 1.125rem;
+          font-family: var(--fontPrimary);
+          font-weight: 300; }
+          .container-paints .description-paint .description-part .info-area .paint-info .title .subtitle {
+            font-family: var(--fontSecundary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.125rem;
+            margin-top: 4px; }
+  .container-paints #item-2:checked ~ .description-paint #test {
+    transform: translateY(0); }
+  .container-paints #item-2:checked ~ .description-paint #test {
+    transform: translateY(-40px); }
+  .container-paints #item-3:checked ~ .description-paint #test {
+    transform: translateY(-78px); }
+
 .signing {
   display: flex;
   justify-content: center;
@@ -217,41 +294,41 @@ body {
       .aside .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
-.aside-hp .line-divider {
+.aside-photography .line-divider {
   margin-top: 4.75rem;
   width: all;
   height: 0.063rem;
   background-color: #E5E5E5; }
 
-.aside-hp .aboutme {
+.aside-photography .aboutme {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-hp .aboutme h2 {
+  .aside-photography .aboutme h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-hp .aboutme .about-description {
+  .aside-photography .aboutme .about-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
 
-.aside-hp .contact {
+.aside-photography .contact {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-hp .contact h2 {
+  .aside-photography .contact h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-hp .contact .contact-description {
+  .aside-photography .contact .contact-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
-    .aside-hp .contact .contact-description p {
+    .aside-photography .contact .contact-description p {
       margin: 0;
       margin-top: 0.25rem;
       color: black; }
-    .aside-hp .contact .contact-description .rrssig {
+    .aside-photography .contact .contact-description .rrssig {
       display: flex;
       gap: 0.875rem; }
-      .aside-hp .contact .contact-description .rrssig .flecha {
+      .aside-photography .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
 @media only screen and (max-width: 1400px) {
@@ -311,11 +388,11 @@ body {
     .aside-index .contact {
       margin-inline: 2.375rem;
       margin-block: 5rem; }
-  .aside-hp {
+  .aside-photography {
     margin-top: 103.125rem; }
-    .aside-hp .aboutme {
+    .aside-photography .aboutme {
       margin-inline: 2.375rem;
       margin-block: 5rem; }
-    .aside-hp .contact {
+    .aside-photography .contact {
       margin-inline: 2.375rem;
       margin-block: 5rem; } }

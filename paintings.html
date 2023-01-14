@@ -40,32 +40,50 @@
                 <li><a href="paintings.html" id="paintings" class="active-filter">Hand paintings</a></li>
             </ul>
         </div>
-        
-        <div class="container-center">
-            <ul class="slider-hp">
-                <li>
-                    <input type="radio" id="slide1" name="slide" checked>
-                    <label for="slide1"></label>
-                    <img src="images/guache_ilustracion.jpg" alt="cuadro 1">
-                </li>
-                <li>
-                    <input type="radio" id="slide2" name="slide">
-                    <label for="slide2"></label>
-                    <img src="images/acuarela.jpg" alt="cuadro 2">
-                </li>
-                <li>
-                    <input type="radio" id="slide3" name="slide">
-                    <label for="slide3"></label>
-                    <img src="images/guache_retrato.jpg" alt="cuadro 3">
-                </li>
-                <li>
-                    <input type="radio" id="slide4" name="slide">
-                    <label for="slide4"></label>
-                    <img src="images/rotulador_fino.jpg" alt="cuadro 4">
-                </li>
-            </ul>
+            <!-- slider -->
+        <div class="container-paints">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+        <div class="cards-paint">
+            <label class="card-paint" for="item-1" id="paint-1">
+            <img src="images/acuarela.jpg" alt="paint">
+            </label>
+            <label class="card-paint" for="item-2" id="paint-2">
+            <img src="images/guache_ilustracion.jpg" alt="paint">
+            </label>
+            <label class="card-paint" for="item-3" id="paint-3">
+            <img src="images/guache_retrato.jpg" alt="paint">
+            </label>
         </div>
-        <section class="aside-footer-hp">
+        <div class="description-paint">
+            <div class="description-part">
+            <div class="info-area" id="test">
+                <label class="paint-info" id="paint-info-1">
+                <div class="title">Portrait</div>
+                <div class="sub-line">
+                    <div class="subtitle">Watercolor on board</div>
+                </div>
+                </label>
+                <label class="paint-info" id="paint-info-2">
+                <div class="title">Portrait illustration</div>
+                <div class="sub-line">
+                    <div class="subtitle">Gouache on board</div>
+                </div>
+                </label>
+                <label class="paint-info" id="paint-info-3">
+                <div class="title">Portrait</div>
+                <div class="sub-line">
+                    <div class="subtitle">Gouache on board</div>
+                </div>
+                </label>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- end slider -->
+
+        <section class="aside-hand-paints">
         <div class="line-divider"></div>
 
         <section class="aboutme">
