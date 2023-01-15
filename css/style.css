@@ -366,7 +366,7 @@ body {
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
   .header-container {
-    margin-inline: 2.375rem; }
+    margin-inline: 2rem; }
     .header-container .author {
       font-size: 0.75rem;
       font-family: var(--fontSecundary);
@@ -383,28 +383,173 @@ body {
       margin-inline: 2.375rem; }
   /*H1--*/
   .nav-filters {
-    margin-inline: 2.375rem; }
-  /* grid index */
+    margin-inline: 2rem; }
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
     margin-inline: 2rem; }
     .container-grid .image {
       height: 24.625rem; }
-  /* grid index */
-  /* aside index */
-  .aside-index {
+  .galeria {
+    margin-inline: 2rem; }
+  .container-paints .description-paint {
+    margin-top: 250px; }
+  .aside {
     margin-top: 103.125rem; }
-    .aside-index .aboutme {
-      margin-inline: 2.375rem;
+    .aside .aboutme {
+      margin-inline: 2rem;
       margin-block: 5rem; }
-    .aside-index .contact {
-      margin-inline: 2.375rem;
+    .aside .contact {
+      margin-inline: 2rem;
       margin-block: 5rem; }
   .aside-photography {
-    margin-top: 103.125rem; }
+    margin-top: 6rem; }
     .aside-photography .aboutme {
-      margin-inline: 2.375rem;
+      margin-inline: 2rem;
       margin-block: 5rem; }
     .aside-photography .contact {
-      margin-inline: 2.375rem;
+      margin-inline: 2rem;
+      margin-block: 5rem; }
+  .aside-hand-paints {
+    margin-top: 2rem; }
+    .aside-hand-paints .aboutme {
+      margin-inline: 2rem;
+      margin-block: 5rem; }
+    .aside-hand-paints .contact {
+      margin-inline: 2rem;
       margin-block: 5rem; } }
+
+@media (max-width: 767px) {
+  .container-intro {
+    font-size: 2rem; }
+    .container-intro h1 {
+      margin-inline: 2.375rem; }
+  .nav-filters {
+    margin-inline: 2.375rem;
+    margin-top: 4.375rem; }
+    .nav-filters .filters {
+      display: block;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 1rem; }
+  .container-grid {
+    column-gap: 0.875rem;
+    margin-inline: 2rem; }
+    .container-grid .image {
+      height: 21rem; }
+  .galeria a,
+  .galeria img {
+    width: 225px;
+    height: 225px; }
+  .aside {
+    margin-top: 90rem; } }
+
+@media (max-width: 580px) {
+  .container-grid .image {
+    height: 15.625rem; }
+  .galeria {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px; }
+    .galeria a,
+    .galeria img {
+      width: 250px;
+      height: 250px; }
+  .container-paints .card-paint {
+    width: 250px;
+    height: 250px; }
+  .aside {
+    margin-top: 66rem; } }
+
+@media (max-width: 460px) {
+  .header-container {
+    margin-inline: 2rem; }
+    .header-container .name-info .brand .author {
+      font-size: 0.8rem;
+      line-height: 1rem; }
+      .header-container .name-info .brand .author br {
+        display: block; }
+    .header-container .name-info .info-author {
+      font-size: 0.84rem; }
+    .header-container .about {
+      font-size: 0.9rem;
+      line-height: 1rem; }
+      .header-container .about .about-link br {
+        display: block; }
+  .container-grid .image {
+    height: 11.625rem; }
+  .galeria {
+    margin-left: 0.8rem;
+    grid-template-columns: repeat(2, auto);
+    gap: 18px; }
+    .galeria a,
+    .galeria img {
+      width: 200px;
+      height: 200px; }
+  .aside {
+    margin-top: 54rem; }
+    .aside .aboutme h2 {
+      font-size: 1.2rem; }
+    .aside .aboutme .about-description {
+      font-size: 0.8rem; }
+    .aside .contact h2 {
+      font-size: 1.2rem; }
+    .aside .contact .contact-description {
+      font-size: 0.8rem; }
+  .aside-photography,
+  .aside-hand-paints {
+    margin-top: 6rem; }
+    .aside-photography .aboutme .box-about,
+    .aside-hand-paints .aboutme .box-about {
+      margin-top: -3rem; }
+    .aside-photography .aboutme h2,
+    .aside-hand-paints .aboutme h2 {
+      font-size: 1.2rem; }
+    .aside-photography .aboutme .about-description,
+    .aside-hand-paints .aboutme .about-description {
+      font-size: 0.8rem;
+      margin-bottom: 0; }
+    .aside-photography .contact .box-contact,
+    .aside-hand-paints .contact .box-contact {
+      margin-top: -3rem; }
+    .aside-photography .contact h2,
+    .aside-hand-paints .contact h2 {
+      font-size: 1.2rem; }
+    .aside-photography .contact .contact-description,
+    .aside-hand-paints .contact .contact-description {
+      font-size: 0.8rem; } }
+
+@media (max-width: 375px) {
+  .header-container .name-info .brand .author {
+    font-size: 0.6rem; }
+    .header-container .name-info .brand .author br {
+      display: block; }
+  .header-container .name-info .info-author {
+    font-size: 0.65rem; }
+  .header-container .about .about-link {
+    font-size: 0.8rem;
+    line-height: normal; }
+    .header-container .about .about-link br {
+      display: block; }
+  .intro {
+    margin-top: -20px; }
+    .intro h1 {
+      font-size: 2rem; }
+  .nav-filters .filters {
+    margin-top: -16px; }
+  .container-grid .image {
+    height: 9.8rem; }
+  .container-grid .grid-info .title-grid {
+    font-size: 0.9rem; }
+  .container-grid .grid-info .description-grid {
+    font-size: 0.68rem; }
+  .galeria {
+    margin-right: 0;
+    width: 500px;
+    grid-template-columns: 4fr; }
+    .galeria a,
+    .galeria img {
+      width: 350px;
+      height: 350px; }
+  .aside {
+    margin-top: 44rem; }
+  .signing {
+    font-size: 0.7rem; } }
