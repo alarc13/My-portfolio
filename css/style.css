@@ -342,11 +342,11 @@ body {
         width: 1.875rem; }
 
 @media only screen and (max-width: 1400px) {
-  .aside-index {
+  .aside {
     margin-top: 25rem; } }
 
 @media only screen and (max-width: 1024px) {
-  /* grid index */
+  /* index */
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.875rem;
@@ -359,7 +359,9 @@ body {
   .galeria {
     margin-inline: 9rem;
     grid-template-columns: repeat(3, auto);
-    gap: 14px; } }
+    gap: 14px; }
+  .container-paints .description-paint {
+    margin-top: 300px; } }
 
 /*responsive tablet */
 @media only screen and (max-width: 875px) {

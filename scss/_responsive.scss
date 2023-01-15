@@ -1,11 +1,11 @@
 @media only screen and (max-width: 1400px){
-    .aside-index{
+    .aside{
      margin-top: 25rem;
- }
- }
+    }
+}
 
- @media only screen and (max-width: 1024px){
-    /* grid index */
+@media only screen and (max-width: 1024px){
+    /* index */
     .container-grid{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2.875rem;
@@ -23,9 +23,14 @@
         margin-inline: 9rem;
         grid-template-columns: repeat(3, auto);
         gap: 14px;
-
-    }   
+    }
+    .container-paints{
+        .description-paint{
+            margin-top: 300px;
+        }
+    }
 }
+
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
     .header-container{
@@ -91,4 +96,16 @@
     }
 }
 }
+
+// //mobile
+// @media (max-width: 360px) {
+//     header{
+//         .name-info{
+//             width: 100%;
+//         }
+//         .about{
+//             margin-left: 250px;
+//         }
+//     }
+// }
 
