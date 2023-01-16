@@ -142,8 +142,8 @@ body {
   gap: 10px; }
   .galeria a {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     overflow: hidden; }
   .galeria img {
     display: block;
@@ -157,7 +157,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   display: none;
   /*display none quita la pripiedad, no es visible pero sigue en el dom. */
   justify-content: center;
@@ -453,9 +453,8 @@ body {
     .galeria img {
       width: 250px;
       height: 250px; }
-  .container-paints .card-paint {
-    width: 250px;
-    height: 250px; }
+  .container-paints .cards-paint .card-paint {
+    width: 40%; }
   .aside {
     margin-top: 66rem; } }
 
@@ -542,14 +541,26 @@ body {
   .container-grid .grid-info .description-grid {
     font-size: 0.68rem; }
   .galeria {
-    margin-right: 0;
-    width: 500px;
-    grid-template-columns: 4fr; }
-    .galeria a,
+    display: inline-block;
+    margin-top: 10px;
+    margin-inline: 0; }
+    .galeria a {
+      width: 350px;
+      height: 350px; }
+      .galeria a .no-visible {
+        display: none; }
     .galeria img {
       width: 350px;
       height: 350px; }
+  .modal img {
+    width: 62%; }
+  .container-paints .cards-paint {
+    margin-bottom: -30px; }
+    .container-paints .cards-paint .card-paint {
+      width: 50%; }
+  .container-paints .description-paint {
+    min-width: 240px; }
   .aside {
-    margin-top: 44rem; }
+    margin-top: 35rem; }
   .signing {
     font-size: 0.7rem; } }

@@ -163,9 +163,10 @@
         }
     }
     .container-paints{
-        .card-paint{
-            width: 250px;
-            height: 250px;
+        .cards-paint{
+            .card-paint{
+                width: 40%;
+            }
         }
     }
    .aside{
@@ -312,18 +313,42 @@
             }
         }
     }
+    
     .galeria{ //aqui!!!!!
-        margin-right: 0;
-        width: 500px;
-        grid-template-columns: 4fr;
-        a,
+        display: inline-block;
+        margin-top: 10px;
+        margin-inline: 0;
+        a{
+           .no-visible{
+                display: none;
+            }
+            width: 350px;
+            height: 350px;
+        }
         img{
             width: 350px;
             height: 350px;
         }
     }
+    .modal{
+        img{
+            width: 62%;
+        }
+    }
+    .container-paints{
+        .cards-paint{
+            margin-bottom: -30px;
+            .card-paint{
+                width: 50%;
+            }
+        }  
+        .description-paint{
+            min-width: 240px;
+        } 
+    }
+    
     .aside{
-        margin-top: 44rem;
+        margin-top: 35rem;
     }
     .signing{
         font-size: 0.7rem;
