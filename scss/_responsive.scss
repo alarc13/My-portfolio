@@ -239,7 +239,6 @@
             }
         } 
     }
- 
     .aside-photography,
     .aside-hand-paints{
         margin-top: 6rem;
@@ -329,6 +328,12 @@
     .nav-filters{
         .filters{
             margin-top: -16px;
+        }
+    }
+    .container-wd{
+        img{
+            width: 600px;
+            height: 300px;
         }
     }
     .container-grid{

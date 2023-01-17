@@ -140,7 +140,7 @@ body {
   justify-content: center; }
   .container-wd img {
     width: 1200px;
-    height: 600px; }
+    height: 580px; }
 
 .galeria {
   width: 450px;
@@ -604,6 +604,9 @@ body {
       font-size: 2rem; }
   .nav-filters .filters {
     margin-top: -16px; }
+  .container-wd img {
+    width: 600px;
+    height: 300px; }
   .container-grid .image {
     height: 9.8rem; }
   .container-grid .grid-info .title-grid {
