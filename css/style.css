@@ -133,6 +133,15 @@ body {
       letter-spacing: 0.125rem;
       /* border: 6px solid aqua; */ }
 
+.container-wd {
+  margin-top: 2.8rem;
+  display: flex;
+  background-color: #0e1116;
+  justify-content: center; }
+  .container-wd img {
+    width: 1200px;
+    height: 600px; }
+
 .galeria {
   width: 450px;
   margin-inline: 9.375rem;
@@ -298,6 +307,43 @@ body {
       display: flex;
       gap: 0.875rem; }
       .aside .contact .contact-description .rrssig .flecha {
+        width: 1.875rem; }
+
+.aside-wd .line-divider {
+  margin-top: 4.75rem;
+  width: all;
+  height: 0.063rem;
+  background-color: #E5E5E5; }
+
+.aside-wd .aboutme {
+  margin-inline: 9.375rem;
+  margin-block: 5rem; }
+  .aside-wd .aboutme h2 {
+    font-family: "Josefin Sans", monospace;
+    font-weight: 500;
+    letter-spacing: 0.188rem; }
+  .aside-wd .aboutme .about-description {
+    font-family: "Roboto", monospace;
+    font-weight: 300; }
+
+.aside-wd .contact {
+  margin-inline: 9.375rem;
+  margin-block: 5rem; }
+  .aside-wd .contact h2 {
+    font-family: "Josefin Sans", monospace;
+    font-weight: 500;
+    letter-spacing: 0.188rem; }
+  .aside-wd .contact .contact-description {
+    font-family: "Roboto", monospace;
+    font-weight: 300; }
+    .aside-wd .contact .contact-description p {
+      margin: 0;
+      margin-top: 0.25rem;
+      color: black; }
+    .aside-wd .contact .contact-description .rrssig {
+      display: flex;
+      gap: 0.875rem; }
+      .aside-wd .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
 .aside-photography .line-divider,
