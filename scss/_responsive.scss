@@ -314,25 +314,29 @@
         }
     }
     
-    .galeria{ //aqui!!!!!
-        display: inline-block;
-        margin-top: 10px;
-        margin-inline: 0;
+    .galeria{ 
+        display:inline;
+        margin-top: 60px;
         a{
-           .no-visible{
+            margin-left: 0.8rem;
+            width: 350px;
+            height: 350px;
+        }
+        img{ //aqui,no consigo quitar scfroll
+            .no-visible{
                 display: none;
             }
             width: 350px;
             height: 350px;
         }
-        img{
-            width: 350px;
-            height: 350px;
-        }
     }
     .modal{
+        justify-content: center;
         img{
             width: 62%;
+        }
+        a{
+            font-size: 1.8rem;
         }
     }
     .container-paints{
@@ -346,6 +350,8 @@
             min-width: 240px;
         } 
     }
+    // .aside-photography{
+    // }
     
     .aside{
         margin-top: 35rem;
