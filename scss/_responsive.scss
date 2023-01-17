@@ -1,3 +1,4 @@
+//responsive desktop
 @media only screen and (max-width: 1400px){
     .aside{
      margin-top: 25rem;
@@ -5,26 +6,22 @@
 }
 
 @media only screen and (max-width: 1024px){
-    /* index */
     .container-grid{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2.875rem;
-        margin-inline: 9rem;
+        margin-inline: 9rem;    
         .image{
             height: 22.625rem;
         }
     }
-    /* aside  */
     .aside{
         margin-top: 97.75rem;
     }
-    //galeria fotografia
     .galeria{
         margin-inline: 9rem;
         grid-template-columns: repeat(3, auto);
         gap: 14px;
     }
-    //hand paint
     .container-paints{
         .description-paint{
             margin-top: 300px;
@@ -35,30 +32,25 @@
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
     .header-container{
-            margin-inline: 2rem;
-            .author{
-                font-size: 0.75rem;
-                font-family: var(--fontSecundary);
-                letter-spacing: 0.188rem;
-            }
-            .info-author{
-                display: flex;
-                margin-top: 0.25rem;
-                font-size: 0.875rem;
-                font-weight: 300;
-            }
-    }
-
-/*H1*/
-    .container-intro{
-        font-size: 2rem;
-        h1{
-            margin-inline: 2.375rem;
+        margin-inline: 2rem;
+        .author{
+            font-size: 0.75rem;
+            font-family: var(--fontSecundary);
+            letter-spacing: 0.188rem;
+        }
+        .info-author{
+            display: flex;
+            margin-top: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 300;
         }
     }
-/*H1--*/
-
-// nav
+.container-intro{
+    font-size: 2rem;
+    h1{
+        margin-inline: 2.375rem;
+    }
+}
 .nav-filters{
     margin-inline: 2rem;
 }
@@ -79,7 +71,7 @@
     }
 }
 .aside{
-    margin-top: 103.125rem;
+    margin-top: 90.125rem;
     .aboutme{
         margin-inline: 2rem;
         margin-block: 5rem;
@@ -89,12 +81,10 @@
         margin-block: 5rem;
     }
 }
+
 .aside-photography{
     margin-top: 6rem;
-    .aboutme{
-        margin-inline: 2rem;
-        margin-block: 5rem;
-    }
+    .aboutme,
     .contact{
         margin-inline: 2rem;
         margin-block: 5rem;
@@ -102,10 +92,14 @@
 }
 .aside-hand-paints{
     margin-top: 2rem;
-    .aboutme{
+    .aboutme,
+    .contact{
         margin-inline: 2rem;
         margin-block: 5rem;
     }
+}
+.aside-wd{
+    .aboutme,
     .contact{
         margin-inline: 2rem;
         margin-block: 5rem;
@@ -147,6 +141,7 @@
         margin-top: 90rem;
     }
 }
+
 @media (max-width: 580px) {
     .container-grid{
        .image{
@@ -170,9 +165,13 @@
         }
     }
    .aside{
-    margin-top: 66rem;
+    margin-top: 56rem;
+    }
+    .container-wd{
+        overflow: hidden;
     }
 }
+//responsive mobile
 @media (max-width: 460px) {
     .header-container{
         margin-inline: 2rem;
@@ -200,12 +199,17 @@
             }
         }
     }
+    .container-wd{
+        img{
+            width: 600px;
+            height: 300px;
+        }
+    }
     .container-grid{
         .image{
             height: 11.625rem;
             } 
     }
-    //galeria fotografia
     .galeria{
         margin-left: 0.8rem;
         grid-template-columns: repeat(2, auto);
@@ -235,7 +239,7 @@
             }
         } 
     }
-    //pagina fotografia y pinturas
+ 
     .aside-photography,
     .aside-hand-paints{
         margin-top: 6rem;
@@ -262,10 +266,37 @@
                 font-size: 0.8rem;
             }
         } 
-    }   
+    }
+    .aside-wd{
+        margin-top: 6rem;
+        .aboutme{
+            .box-about{
+                margin-top: -3rem;
+            }
+            h2{
+            font-size: 1.2rem;
+            }
+            .about-description{
+              font-size: 0.8rem;
+              margin-bottom: 0;
+            }
+        } 
+        .contact{
+            .box-contact{
+                margin-top: -3rem;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+            .contact-description{
+                font-size: 0.8rem;
+            }
+        } 
+    }      
 }
 @media (max-width: 375px) {
     .header-container{
+        margin-top: 32px;
         .name-info{
             .brand{
                 .author{
@@ -322,7 +353,7 @@
             width: 350px;
             height: 350px;
         }
-        img{ //aqui,no consigo quitar scfroll
+        img{ 
             .no-visible{
                 display: none;
             }
@@ -350,9 +381,6 @@
             min-width: 240px;
         } 
     }
-    // .aside-photography{
-    // }
-    
     .aside{
         margin-top: 35rem;
     }

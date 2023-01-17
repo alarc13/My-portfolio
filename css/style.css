@@ -398,14 +398,12 @@ body {
     margin-top: 25rem; } }
 
 @media only screen and (max-width: 1024px) {
-  /* index */
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.875rem;
     margin-inline: 9rem; }
     .container-grid .image {
       height: 22.625rem; }
-  /* aside  */
   .aside {
     margin-top: 97.75rem; }
   .galeria {
@@ -428,12 +426,10 @@ body {
       margin-top: 0.25rem;
       font-size: 0.875rem;
       font-weight: 300; }
-  /*H1*/
   .container-intro {
     font-size: 2rem; }
     .container-intro h1 {
       margin-inline: 2.375rem; }
-  /*H1--*/
   .nav-filters {
     margin-inline: 2rem; }
   .container-grid {
@@ -446,7 +442,7 @@ body {
   .container-paints .description-paint {
     margin-top: 250px; }
   .aside {
-    margin-top: 103.125rem; }
+    margin-top: 90.125rem; }
     .aside .aboutme {
       margin-inline: 2rem;
       margin-block: 5rem; }
@@ -455,20 +451,20 @@ body {
       margin-block: 5rem; }
   .aside-photography {
     margin-top: 6rem; }
-    .aside-photography .aboutme {
-      margin-inline: 2rem;
-      margin-block: 5rem; }
+    .aside-photography .aboutme,
     .aside-photography .contact {
       margin-inline: 2rem;
       margin-block: 5rem; }
   .aside-hand-paints {
     margin-top: 2rem; }
-    .aside-hand-paints .aboutme {
-      margin-inline: 2rem;
-      margin-block: 5rem; }
+    .aside-hand-paints .aboutme,
     .aside-hand-paints .contact {
       margin-inline: 2rem;
-      margin-block: 5rem; } }
+      margin-block: 5rem; }
+  .aside-wd .aboutme,
+  .aside-wd .contact {
+    margin-inline: 2rem;
+    margin-block: 5rem; } }
 
 @media (max-width: 767px) {
   .container-intro {
@@ -508,7 +504,9 @@ body {
   .container-paints .cards-paint .card-paint {
     width: 40%; }
   .aside {
-    margin-top: 66rem; } }
+    margin-top: 56rem; }
+  .container-wd {
+    overflow: hidden; } }
 
 @media (max-width: 460px) {
   .header-container {
@@ -525,6 +523,9 @@ body {
       line-height: 1rem; }
       .header-container .about .about-link br {
         display: block; }
+  .container-wd img {
+    width: 600px;
+    height: 300px; }
   .container-grid .image {
     height: 11.625rem; }
   .galeria {
@@ -566,20 +567,37 @@ body {
       font-size: 1.2rem; }
     .aside-photography .contact .contact-description,
     .aside-hand-paints .contact .contact-description {
+      font-size: 0.8rem; }
+  .aside-wd {
+    margin-top: 6rem; }
+    .aside-wd .aboutme .box-about {
+      margin-top: -3rem; }
+    .aside-wd .aboutme h2 {
+      font-size: 1.2rem; }
+    .aside-wd .aboutme .about-description {
+      font-size: 0.8rem;
+      margin-bottom: 0; }
+    .aside-wd .contact .box-contact {
+      margin-top: -3rem; }
+    .aside-wd .contact h2 {
+      font-size: 1.2rem; }
+    .aside-wd .contact .contact-description {
       font-size: 0.8rem; } }
 
 @media (max-width: 375px) {
-  .header-container .name-info .brand .author {
-    font-size: 0.6rem; }
-    .header-container .name-info .brand .author br {
-      display: block; }
-  .header-container .name-info .info-author {
-    font-size: 0.65rem; }
-  .header-container .about .about-link {
-    font-size: 0.8rem;
-    line-height: normal; }
-    .header-container .about .about-link br {
-      display: block; }
+  .header-container {
+    margin-top: 32px; }
+    .header-container .name-info .brand .author {
+      font-size: 0.6rem; }
+      .header-container .name-info .brand .author br {
+        display: block; }
+    .header-container .name-info .info-author {
+      font-size: 0.65rem; }
+    .header-container .about .about-link {
+      font-size: 0.8rem;
+      line-height: normal; }
+      .header-container .about .about-link br {
+        display: block; }
   .intro {
     margin-top: -20px; }
     .intro h1 {
