@@ -117,21 +117,18 @@ body {
     width: 100%;
     height: 16.625rem; }
   .container-grid .grid-info {
-    margin-top: 0.625rem;
-    /* border: 6px solid red; */ }
+    margin-top: 0.625rem; }
     .container-grid .grid-info .title-grid {
       font-size: 1.125rem;
       font-family: "Roboto", monospace;
-      font-weight: 300;
-      /* border: 6px solid pink; */ }
+      font-weight: 300; }
     .container-grid .grid-info .description-grid {
       margin-top: 0.625rem;
       font-family: "Josefin Sans", monospace;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 0.75rem;
-      letter-spacing: 0.125rem;
-      /* border: 6px solid aqua; */ }
+      letter-spacing: 0.125rem; }
 
 .container-wd {
   margin-top: 2.8rem;
@@ -139,25 +136,25 @@ body {
   background-color: #0e1116;
   justify-content: center; }
   .container-wd img {
-    width: 1200px;
-    height: 580px; }
+    width: 75rem;
+    height: 48.75rem; }
 
 .galeria {
-  width: 450px;
+  width: 2.813rem;
   margin-inline: 9.375rem;
   margin-top: 2.8rem;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 10px; }
+  gap: 0.625; }
   .galeria a {
     display: block;
-    width: 280px;
-    height: 280px;
+    width: 17.5rem;
+    height: 17.5rem;
     overflow: hidden; }
   .galeria img {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
     overflow: hidden; }
 
 .galeria-mobile {
@@ -181,7 +178,7 @@ body {
     display: block;
     color: white;
     font-size: 3em;
-    margin: 0 20px; }
+    margin: 0 1.25rem; }
   .modal img {
     display: block; }
 
@@ -189,7 +186,7 @@ body {
   display: flex; }
 
 .container-paints {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -202,7 +199,7 @@ body {
   .container-paints .cards-paint {
     width: 100%;
     height: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 1.25rem; }
     .container-paints .cards-paint .card-paint {
       position: absolute;
       width: 30%;
@@ -214,7 +211,7 @@ body {
       .container-paints .cards-paint .card-paint img {
         width: 100%;
         height: 100%;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         object-fit: cover;
         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47); }
   .container-paints #item-1:checked ~ .cards-paint #paint-3, .container-paints #item-2:checked ~ .cards-paint #paint-1, .container-paints #item-3:checked ~ .cards-paint #paint-2 {
@@ -230,22 +227,22 @@ body {
     opacity: 1;
     z-index: 1; }
   .container-paints .description-paint {
-    margin-top: 400px;
-    border-radius: 8px;
-    min-width: 320px;
-    padding: 16px 10px;
+    margin-top: 25rem;
+    border-radius: 0.5rem;
+    min-width: 20rem;
+    padding: 1rem 0.625rem;
     box-shadow: 0px 0px 1px 0px rgba(81, 81, 81, 0.47); }
     .container-paints .description-paint .description-part {
       position: relative;
       display: flex;
       align-items: center;
-      height: 36px;
+      height: 2.25rem;
       overflow: hidden; }
       .container-paints .description-paint .description-part .info-area {
         width: 100%;
         position: absolute;
         top: 0;
-        left: 30px;
+        left: 1.875rem;
         transition: transform .4s ease-in; }
         .container-paints .description-paint .description-part .info-area .paint-info .title {
           font-size: 1.125rem;
@@ -257,13 +254,13 @@ body {
           text-transform: uppercase;
           font-size: 0.75rem;
           letter-spacing: 0.125rem;
-          margin-top: 4px; }
+          margin-top: 0.25rem; }
   .container-paints #item-2:checked ~ .description-paint #test {
     transform: translateY(0); }
   .container-paints #item-2:checked ~ .description-paint #test {
-    transform: translateY(-40px); }
+    transform: translateY(-2.5rem); }
   .container-paints #item-3:checked ~ .description-paint #test {
-    transform: translateY(-76px); }
+    transform: translateY(-4.75rem); }
 
 .signing {
   display: flex;
@@ -409,9 +406,9 @@ body {
   .galeria {
     margin-inline: 9rem;
     grid-template-columns: repeat(3, auto);
-    gap: 14px; }
+    gap: 0.875rem; }
   .container-paints .description-paint {
-    margin-top: 300px; } }
+    margin-top: 18.75rem; } }
 
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
@@ -440,7 +437,7 @@ body {
   .galeria {
     margin-inline: 2rem; }
   .container-paints .description-paint {
-    margin-top: 250px; }
+    margin-top: 15.625rem; }
   .aside {
     margin-top: 90.125rem; }
     .aside .aboutme {
@@ -486,8 +483,8 @@ body {
       height: 21rem; }
   .galeria a,
   .galeria img {
-    width: 225px;
-    height: 225px; }
+    width: 14.063rem;
+    height: 14.063rem; }
   .aside {
     margin-top: 90rem; } }
 
@@ -496,11 +493,11 @@ body {
     height: 15.625rem; }
   .galeria {
     grid-template-columns: repeat(2, auto);
-    gap: 10px; }
+    gap: 0.625rem; }
     .galeria a,
     .galeria img {
-      width: 250px;
-      height: 250px; }
+      width: 15.625rem;
+      height: 15.625rem; }
   .container-paints .cards-paint .card-paint {
     width: 40%; }
   .aside {
@@ -524,18 +521,18 @@ body {
       .header-container .about .about-link br {
         display: block; }
   .container-wd img {
-    width: 600px;
-    height: 300px; }
+    width: 37.5rem;
+    height: 18.75rem; }
   .container-grid .image {
     height: 11.625rem; }
   .galeria {
     margin-left: 0.8rem;
     grid-template-columns: repeat(2, auto);
-    gap: 18px; }
+    gap: 1.125rem; }
     .galeria a,
     .galeria img {
-      width: 200px;
-      height: 200px; }
+      width: 12.5rem;
+      height: 12.5rem; }
   .aside {
     margin-top: 54rem; }
     .aside .aboutme h2 {
@@ -586,7 +583,7 @@ body {
 
 @media (max-width: 375px) {
   .header-container {
-    margin-top: 32px; }
+    margin-top: 2rem; }
     .header-container .name-info .brand .author {
       font-size: 0.6rem; }
       .header-container .name-info .brand .author br {
@@ -599,14 +596,14 @@ body {
       .header-container .about .about-link br {
         display: block; }
   .intro {
-    margin-top: -20px; }
+    margin-top: -1.25rem; }
     .intro h1 {
       font-size: 2rem; }
   .nav-filters .filters {
-    margin-top: -16px; }
+    margin-top: -1rem; }
   .container-wd img {
-    width: 600px;
-    height: 300px; }
+    width: 37.5rem;
+    height: 18.75rem; }
   .container-grid .image {
     height: 9.8rem; }
   .container-grid .grid-info .title-grid {
@@ -615,14 +612,14 @@ body {
     font-size: 0.68rem; }
   .galeria {
     display: inline;
-    margin-top: 60px; }
+    margin-top: 3.75rem; }
     .galeria a {
       margin-left: 0.8rem;
-      width: 350px;
-      height: 350px; }
+      width: 21.875rem;
+      height: 21.875rem; }
     .galeria img {
-      width: 350px;
-      height: 350px; }
+      width: 21.875rem;
+      height: 21.875rem; }
       .galeria img .no-visible {
         display: none; }
   .modal {
@@ -632,11 +629,11 @@ body {
     .modal a {
       font-size: 1.8rem; }
   .container-paints .cards-paint {
-    margin-bottom: -30px; }
+    margin-bottom: -1.875rem; }
     .container-paints .cards-paint .card-paint {
       width: 50%; }
   .container-paints .description-paint {
-    min-width: 240px; }
+    min-width: 15rem; }
   .aside {
     margin-top: 35rem; }
   .signing {

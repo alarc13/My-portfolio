@@ -20,11 +20,11 @@
     .galeria{
         margin-inline: 9rem;
         grid-template-columns: repeat(3, auto);
-        gap: 14px;
+        gap: 0.875rem;
     }
     .container-paints{
         .description-paint{
-            margin-top: 300px;
+            margin-top: 18.75rem;
         }
     }
 }
@@ -67,7 +67,7 @@
 }
 .container-paints{
     .description-paint{
-        margin-top: 250px;
+        margin-top: 15.625rem;
     }
 }
 .aside{
@@ -133,8 +133,8 @@
     .galeria{
         a,
         img{
-            width: 225px;
-            height: 225px;
+            width: 14.063rem;
+            height: 14.063rem;
         }
     }
     .aside{
@@ -150,11 +150,11 @@
    }
    .galeria{
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
+    gap: 0.625rem;
         a,
         img{
-            width: 250px;
-            height: 250px;
+            width: 15.625rem;
+            height: 15.625rem;
         }
     }
     .container-paints{
@@ -201,8 +201,8 @@
     }
     .container-wd{
         img{
-            width: 600px;
-            height: 300px;
+            width: 37.5rem;
+            height: 18.75rem;
         }
     }
     .container-grid{
@@ -213,11 +213,11 @@
     .galeria{
         margin-left: 0.8rem;
         grid-template-columns: repeat(2, auto);
-        gap: 18px;
+        gap: 1.125rem;
             a,
             img{
-                width: 200px;
-                height: 200px;
+                width: 12.5rem;
+                height: 12.5rem;
             }
         }
     .aside{
@@ -295,7 +295,7 @@
 }
 @media (max-width: 375px) {
     .header-container{
-        margin-top: 32px;
+        margin-top: 2rem;
         .name-info{
             .brand{
                 .author{
@@ -320,20 +320,20 @@
         }
     }
     .intro{
-        margin-top: -20px;
+        margin-top: -1.25rem;
         h1{
             font-size: 2rem;
         }
     }
     .nav-filters{
         .filters{
-            margin-top: -16px;
+            margin-top: -1rem;
         }
     }
     .container-wd{
         img{
-            width: 600px;
-            height: 300px;
+            width: 37.5rem;
+            height: 18.75rem;
         }
     }
     .container-grid{
@@ -352,18 +352,18 @@
     
     .galeria{ 
         display:inline;
-        margin-top: 60px;
+        margin-top: 3.75rem;
         a{
             margin-left: 0.8rem;
-            width: 350px;
-            height: 350px;
+            width: 21.875rem;
+            height: 21.875rem;
         }
         img{ 
             .no-visible{
                 display: none;
             }
-            width: 350px;
-            height: 350px;
+            width: 21.875rem;
+            height: 21.875rem;
         }
     }
     .modal{
@@ -377,13 +377,13 @@
     }
     .container-paints{
         .cards-paint{
-            margin-bottom: -30px;
+            margin-bottom: -1.875rem;
             .card-paint{
                 width: 50%;
             }
         }  
         .description-paint{
-            min-width: 240px;
+            min-width: 15rem;
         } 
     }
     .aside{

@@ -1,5 +1,5 @@
 .container-paints {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
@@ -13,7 +13,7 @@
     .cards-paint{
         width: 100%;
         height: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         .card-paint {
             position: absolute;
             width: 30%;
@@ -25,7 +25,7 @@
             img {
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
+                border-radius: 0.625rem;
                 object-fit: cover;
                 box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
               }
@@ -47,22 +47,22 @@
         z-index: 1;
       }
       .description-paint {
-        margin-top: 400px;
-        border-radius: 8px;
-        min-width: 320px;
-        padding: 16px 10px;
+        margin-top: 25rem;
+        border-radius: 0.5rem;
+        min-width: 20rem;
+        padding: 1rem 0.625rem;
         box-shadow: 0px 0px 1px 0px rgba(81, 81, 81, 0.47);
         .description-part {
             position: relative;
             display: flex;
             align-items: center;
-            height: 36px;
+            height: 2.25rem;
             overflow: hidden;
             .info-area {
                 width: 100%;
                 position: absolute;
                 top: 0;
-                left: 30px;
+                left: 1.875rem;
                 transition: transform .4s ease-in;
                 .paint-info{
                     .title {
@@ -76,7 +76,7 @@
                         text-transform: uppercase;
                         font-size: 0.75rem;
                         letter-spacing: 0.125rem;
-                        margin-top: 4px;
+                        margin-top: 0.25rem;
                     }
                 }
             }
@@ -87,10 +87,10 @@
     }
       
     #item-2:checked ~ .description-paint #test  {
-        transform: translateY(-40px);
+        transform: translateY(-2.5rem);
     }
       
     #item-3:checked ~ .description-paint #test  {
-        transform: translateY(-76px);
+        transform: translateY(-4.75rem);
     }
   }
