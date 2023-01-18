@@ -1,0 +1,29 @@
+//header 
+@mixin flexheader($font-size, $justify, $margin-inline, $margin-block-start){ //en la creación del mixin dentro de los parentesis son los parametros
+    display: flex;
+    font-size: $font-size;
+    justify-content: $justify;
+    margin-inline: $margin-inline;
+    margin-block-start: $margin-block-start;
+}
+//mixin footer
+@mixin flexSigning($justify, $font-fam, $margin-block, $font-size){
+    display: flex;
+    justify-content: $justify;
+    font-family: $font-fam;
+    margin-block: $margin-block;
+    font-size: $font-size;
+}
+//mixin filtros nav
+@mixin filtersNav($margin, $padding, $gap, $font-fam, $text-trans, $font-size, $list-style){
+    display: flex;
+    margin: $margin;
+    padding: $padding;
+    gap: $gap;
+    font-family: $font-fam;
+    text-transform: $text-trans;
+    font-size: $font-size;
+    list-style: $list-style;
+}
+
+

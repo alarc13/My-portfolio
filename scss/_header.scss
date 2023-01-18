@@ -1,9 +1,5 @@
 .header-container{
-    font-size: 0.875rem;
-    display: flex;
-    justify-content: space-between;
-    margin-inline: 9.375rem;
-    margin-block-start: 3.125rem;
+    @include flexheader(0.875rem, space-between, 9.375rem, 3.125rem);// en la ejecucion los parentesis ahora son argumentos
     .name-info{
         .brand{
                 font-size: 1rem;

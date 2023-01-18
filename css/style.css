@@ -7,8 +7,8 @@ body {
   inline-size: 100%; }
 
 .header-container {
-  font-size: 0.875rem;
   display: flex;
+  font-size: 0.875rem;
   justify-content: space-between;
   margin-inline: 9.375rem;
   margin-block-start: 3.125rem; }
@@ -55,7 +55,7 @@ body {
     gap: 1.25rem;
     font-family: "Josefin Sans", monospace;
     text-transform: uppercase;
-    font-size: 0.90rem;
+    font-size: 0.9rem;
     list-style: none; }
     .nav-filters .filters .active-filter {
       color: black;

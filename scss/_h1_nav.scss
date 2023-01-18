@@ -14,14 +14,7 @@
     margin-top: 5rem;
     margin-inline-start: 9.375rem;
     .filters{
-        display: flex;
-        margin: 0;
-        padding: 0;
-        gap: 1.25rem;
-        font-family: $fontSecundary;
-        text-transform: uppercase;
-        font-size: 0.90rem;
-        list-style: none;
+        @include filtersNav(0, 0, 1.25rem, $fontSecundary, uppercase, 0.90rem, none);
         .active-filter{
             color: $colorPrimary;
             text-decoration: none;
