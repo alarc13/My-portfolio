@@ -1,6 +1,6 @@
-.only-modal {
+.product-modal{
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -10,31 +10,30 @@
         opacity: 1;
     }
 }
-.only-modal {
+.product-modal {
     display: flex;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.591);
-    // border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    background: #1e1e1e40;
     transition: all 0.7s;
     height: 1900px;
     .modal-content {
-        margin-top: 90px;
-        height: 700px;
+        margin-top: 62px;
+        height: 580px;
         background: rgb(255, 255, 255);
         -webkit-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
         -moz-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
         box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
+        overflow: hidden;
             img{
-                width: 650px;
-                height: 600px;
-                overflow: hidden;
+                height: 500px;
             }
             .modal-close {
             color: darken(rgba(55, 11, 105, 1), 10%);
             font-size: 2em;
             position: absolute;
-            top: 100px;
-            right: 410px;
+            top: 66px;
+            right: 480px;
             text-decoration: none;
             line-height: 1;
         }
@@ -42,11 +41,11 @@
             margin-left: 20px;
             h3{
                 margin: 0;
-                margin-top: 18px;
+                margin-top: 12px;
                 font-family: $fontSecundary;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 letter-spacing: 1.5rem;
             }
             p{
@@ -54,7 +53,7 @@
                 margin-top: 8px;
                 font-family: $fontPrimary;
                 font-weight: 300;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }
