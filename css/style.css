@@ -159,12 +159,13 @@ body {
     .product-modal .modal-content img {
       height: 500px; }
     .product-modal .modal-content .modal-close {
-      color: #1f063b;
+      color: black;
       font-size: 2em;
       position: absolute;
       top: 66px;
       right: 480px;
       text-decoration: none;
+      text-shadow: 0 0 0.04em white;
       line-height: 1; }
     .product-modal .modal-content .description-modal {
       margin-left: 20px; }
