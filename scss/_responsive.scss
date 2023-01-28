@@ -184,6 +184,22 @@
             height: 18rem;
         }
     }
+    .product-modal{
+        .modal-content{
+            margin-top: 2rem;
+            width: 400px;
+            height: 450px;
+            img{
+                width: 400px;
+                height: 380px;
+            }
+            .modal-close{
+                top: 34px;
+                right: 196px;
+            }
+
+        }
+    }
     .galeria{
         width: 1.813rem;
         column-gap: 0.875rem;
@@ -208,28 +224,47 @@
         height: 15.625rem;
         }  
    }
-   .galeria{
-    grid-template-columns: repeat(2, auto);
-    gap: 0.625rem;
-        a,
-        img{
-            width: 15.625rem;
-            height: 15.625rem;
+   .product-modal{
+    .modal-content{
+        .modal-close{
+            top: 34px;
+            right: 98px;
+        }
+
+    }
+}
+.galeria{
+    width: 15rem;
+    a{
+        width: 15rem;
+        height: 20.5rem;
+    }
+    .image{
+        height: 20.5rem;
+    }
+}
+.modal{
+    justify-content: center;
+    img{
+        width: 62%;
+    }
+    a{
+        font-size: 1.8rem;
+    }
+}
+.container-paints{
+    .cards-paint{
+        .card-paint{
+            width: 40%;
         }
     }
-    .container-paints{
-        .cards-paint{
-            .card-paint{
-                width: 40%;
-            }
-        }
-    }
-   .aside{
+}
+.aside{
     margin-top: 56rem;
-    }
-    .container-wd{
-        overflow: hidden;
-    }
+}
+.container-wd{
+    overflow: hidden;
+}
 }
 //responsive mobile
 @media (max-width: 460px) {
@@ -259,6 +294,9 @@
             }
         }
     }
+    .container-intro{
+        font-size: 1.625rem;
+    }
     .container-wd{
         img{
             width: 37.5rem;
@@ -271,17 +309,23 @@
             } 
     }
     .galeria{
-        margin-left: 0.8rem;
-        grid-template-columns: repeat(2, auto);
-        gap: 1.125rem;
-            a,
-            img{
-                width: 12.5rem;
-                height: 12.5rem;
+        width: 0;
+        grid-template-columns: repeat(2, 0.5fr);
+        column-gap: 10px;
+            a{
+                width: 12rem;
+                height: 13.5rem;
+                overflow: hidden;
+                padding-bottom: 10px;
             }
-        }
+            img{
+                width: 12rem;
+                height: 13.625rem;
+                overflow: hidden;
+            }     
+    }
     .aside{
-        margin-top: 54rem;
+        margin-top: 42em;
         .aboutme{
             h2{
             font-size: 1.2rem;
@@ -351,7 +395,15 @@
                 font-size: 0.8rem;
             }
         } 
-    }      
+    }    
+    .product-modal{
+        .modal-content{
+            .modal-close{
+                top: 32px;
+                right: 38px;
+            }
+        }
+    }
 }
 @media (max-width: 375px) {
     .header-container{
@@ -387,7 +439,7 @@
     }
     .nav-filters{
         .filters{
-            margin-top: -1rem;
+            margin-top: -2.2rem;
         }
     }
     .container-wd{
@@ -409,22 +461,18 @@
             }
         }
     }
-    
-    .galeria{ 
-        display:inline;
-        margin-top: 3.75rem;
-        a{
-            margin-left: 0.8rem;
-            width: 21.875rem;
-            height: 21.875rem;
-        }
-        img{ 
-            .no-visible{
-                display: none;
+    .galeria{
+        margin-top: 1.4rem;
+        column-gap: 6px;
+            a{
+                width: 9.4rem;
+                height: 10rem;
+                padding-bottom: 6px;
             }
-            width: 21.875rem;
-            height: 21.875rem;
-        }
+            img{
+                width: 9.4rem;
+                height: 10rem;
+            }     
     }
     .modal{
         justify-content: center;
@@ -433,6 +481,33 @@
         }
         a{
             font-size: 1.8rem;
+        }
+    }
+    .product-modal{
+        .modal-content{
+            margin-top: 5rem;
+            width: 320px;
+            height: 350px;
+            img{
+                width: 320px;
+                height: 300px;
+            }
+            .modal-close{
+                top: 5rem;
+                right: 2.5rem;
+            }
+            .description-modal{
+                margin-top: -3px;
+                margin-left: 14px;
+                h3{
+                    font-size: 0.6rem;
+                    letter-spacing: 0.2rem;
+                }
+                p{
+                    margin-top: 3px;
+                    font-size: 0.6rem;
+                }
+            }
         }
     }
     .container-paints{
@@ -447,7 +522,7 @@
         } 
     }
     .aside{
-        margin-top: 35rem;
+        margin-top: 30rem;
     }
     .signing{
         font-size: 0.7rem;
