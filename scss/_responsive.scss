@@ -1,8 +1,9 @@
 //responsive desktop
 @media only screen and (max-width: 1400px){
     .aside{
-     margin-top: 25rem;
+     margin-top: 14rem;
     }
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -14,13 +15,51 @@
             height: 22.625rem;
         }
     }
+    .product-modal{
+        .modal-content{
+            margin-top: 1rem;
+            width: 400px;
+            height: 400px;
+            img{
+                width: 400px;
+                height: 336px;
+            }
+            .modal-close{
+                top: 16px;
+                right: 322px;
+            }
+            .description-modal{
+                margin-top: 5px;
+                margin-left: 10px;
+                h3{
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.8rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
     .aside{
-        margin-top: 97.75rem;
+        margin-top: 82rem;
     }
     .galeria{
-        margin-inline: 9rem;
-        grid-template-columns: repeat(3, auto);
-        gap: 0.875rem;
+        width: 22rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.875rem;
+        a{
+            display: inline;
+            width: 22rem;
+            height: 22rem;
+            padding-bottom: 2rem;
+        }
+        img{
+            display:inline;
+            width: 22rem;
+            height: 22rem;
+        }    
     }
     .container-paints{
         .description-paint{
@@ -32,7 +71,8 @@
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
     .header-container{
-        margin-inline: 2rem;
+        margin-block-start: 2rem;
+        margin-inline: 3rem;
         .author{
             font-size: 0.75rem;
             font-family: var(--fontSecundary);
@@ -48,22 +88,36 @@
 .container-intro{
     font-size: 2rem;
     h1{
-        margin-inline: 2.375rem;
+        margin-inline: 3rem;
     }
 }
 .nav-filters{
-    margin-inline: 2rem;
+    margin-inline: 3rem;
 }
-
 .container-grid{
     grid-template-columns: repeat(2, 1fr);
-    margin-inline: 2rem;
+    margin-inline: 3rem;
+        @for $i from 1 through 8{
+        .effect-image-#{i}, .grayscale-effect{
+                img{ 
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+                }
+        }
+    } 
     .image{
         height: 24.625rem;
     }
 }
+.product-modal{
+    .modal-content{
+        .modal-close{
+            right: 246px;
+        }
+    }
+}
 .galeria{
-    margin-inline: 2rem;
+    margin-inline: 3rem;
 }
 .container-paints{
     .description-paint{
@@ -73,11 +127,11 @@
 .aside{
     margin-top: 90.125rem;
     .aboutme{
-        margin-inline: 2rem;
+        margin-inline: 3rem;
         margin-block: 5rem;
     }
     .contact{
-        margin-inline: 2rem;
+        margin-inline: 3rem;
         margin-block: 5rem;
     }
 }
@@ -86,7 +140,7 @@
     margin-top: 6rem;
     .aboutme,
     .contact{
-        margin-inline: 2rem;
+        margin-inline: 3rem;
         margin-block: 5rem;
     }
 }
@@ -94,14 +148,14 @@
     margin-top: 2rem;
     .aboutme,
     .contact{
-        margin-inline: 2rem;
+        margin-inline: 3rem;
         margin-block: 5rem;
     }
 }
 .aside-wd{
     .aboutme,
     .contact{
-        margin-inline: 2rem;
+        margin-inline: 3rem;
         margin-block: 5rem;
     }
 }
@@ -127,18 +181,24 @@
         column-gap: 0.875rem;
         margin-inline: 2rem;
         .image{
-            height: 21rem;
+            height: 18rem;
         }
     }
     .galeria{
-        a,
-        img{
-            width: 14.063rem;
-            height: 14.063rem;
+        width: 1.813rem;
+        column-gap: 0.875rem;
+        margin-inline: 2rem;
+        a{
+            width: 21.5rem;
+            height: 20.5rem;
+            padding-bottom: 2.4rem;
+        }
+        .image{
+            height: 20rem;
         }
     }
     .aside{
-        margin-top: 90rem;
+        margin-top: 66rem;
     }
 }
 

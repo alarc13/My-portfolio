@@ -22,12 +22,13 @@
         .effect-image-#{i}, .grayscale-effect{
             position: relative;
             display: block;
-                img{ transition: all .4s linear;
-                    -webkit-transition: all .4s linear;
-                    -moz-transition: all .4s linear;
-                    -o-transition: all .4s linear;
-                    filter: grayscale(100%);
-                    -webkit-filter: grayscale(100%);
+                img{ 
+                transition: all .4s linear;
+                -webkit-transition: all .4s linear;
+                -moz-transition: all .4s linear;
+                -o-transition: all .4s linear;
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
                     &:hover{
                         filter: grayscale(0);
                         -webkit-filter: grayscale(0);

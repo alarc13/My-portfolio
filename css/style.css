@@ -548,7 +548,7 @@ body {
 
 @media only screen and (max-width: 1400px) {
   .aside {
-    margin-top: 25rem; } }
+    margin-top: 14rem; } }
 
 @media only screen and (max-width: 1024px) {
   .container-grid {
@@ -557,19 +557,48 @@ body {
     margin-inline: 9rem; }
     .container-grid .image {
       height: 22.625rem; }
+  .product-modal .modal-content {
+    margin-top: 1rem;
+    width: 400px;
+    height: 400px; }
+    .product-modal .modal-content img {
+      width: 400px;
+      height: 336px; }
+    .product-modal .modal-content .modal-close {
+      top: 16px;
+      right: 322px; }
+    .product-modal .modal-content .description-modal {
+      margin-top: 5px;
+      margin-left: 10px; }
+      .product-modal .modal-content .description-modal h3 {
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.8rem; }
+      .product-modal .modal-content .description-modal p {
+        font-size: 0.8rem; }
   .aside {
-    margin-top: 97.75rem; }
+    margin-top: 82rem; }
   .galeria {
-    margin-inline: 9rem;
-    grid-template-columns: repeat(3, auto);
-    gap: 0.875rem; }
+    width: 22rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.875rem; }
+    .galeria a {
+      display: inline;
+      width: 22rem;
+      height: 22rem;
+      padding-bottom: 2rem; }
+    .galeria img {
+      display: inline;
+      width: 22rem;
+      height: 22rem; }
   .container-paints .description-paint {
     margin-top: 18.75rem; } }
 
 /*responsive tablet */
 @media only screen and (max-width: 875px) {
   .header-container {
-    margin-inline: 2rem; }
+    margin-block-start: 2rem;
+    margin-inline: 3rem; }
     .header-container .author {
       font-size: 0.75rem;
       font-family: var(--fontSecundary);
@@ -582,41 +611,67 @@ body {
   .container-intro {
     font-size: 2rem; }
     .container-intro h1 {
-      margin-inline: 2.375rem; }
+      margin-inline: 3rem; }
   .nav-filters {
-    margin-inline: 2rem; }
+    margin-inline: 3rem; }
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
-    margin-inline: 2rem; }
+    margin-inline: 3rem; }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+    .container-grid .effect-image-i img, .container-grid .grayscale-effect img {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
     .container-grid .image {
       height: 24.625rem; }
+  .product-modal .modal-content .modal-close {
+    right: 246px; }
   .galeria {
-    margin-inline: 2rem; }
+    margin-inline: 3rem; }
   .container-paints .description-paint {
     margin-top: 15.625rem; }
   .aside {
     margin-top: 90.125rem; }
     .aside .aboutme {
-      margin-inline: 2rem;
+      margin-inline: 3rem;
       margin-block: 5rem; }
     .aside .contact {
-      margin-inline: 2rem;
+      margin-inline: 3rem;
       margin-block: 5rem; }
   .aside-photography {
     margin-top: 6rem; }
     .aside-photography .aboutme,
     .aside-photography .contact {
-      margin-inline: 2rem;
+      margin-inline: 3rem;
       margin-block: 5rem; }
   .aside-hand-paints {
     margin-top: 2rem; }
     .aside-hand-paints .aboutme,
     .aside-hand-paints .contact {
-      margin-inline: 2rem;
+      margin-inline: 3rem;
       margin-block: 5rem; }
   .aside-wd .aboutme,
   .aside-wd .contact {
-    margin-inline: 2rem;
+    margin-inline: 3rem;
     margin-block: 5rem; } }
 
 @media (max-width: 767px) {
@@ -636,13 +691,19 @@ body {
     column-gap: 0.875rem;
     margin-inline: 2rem; }
     .container-grid .image {
-      height: 21rem; }
-  .galeria a,
-  .galeria img {
-    width: 14.063rem;
-    height: 14.063rem; }
+      height: 18rem; }
+  .galeria {
+    width: 1.813rem;
+    column-gap: 0.875rem;
+    margin-inline: 2rem; }
+    .galeria a {
+      width: 21.5rem;
+      height: 20.5rem;
+      padding-bottom: 2.4rem; }
+    .galeria .image {
+      height: 20rem; }
   .aside {
-    margin-top: 90rem; } }
+    margin-top: 66rem; } }
 
 @media (max-width: 580px) {
   .container-grid .image {
