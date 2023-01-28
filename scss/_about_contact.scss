@@ -92,7 +92,6 @@
     } 
 }
 //pagina fotografia y pinturas
-.aside-photography,
 .aside-hand-paints{
     .line-divider{
         margin-top: 4.75rem;
@@ -112,6 +111,64 @@
             font-family: $fontPrimary;
             font-weight: 300;
         }
+    }
+    .contact{
+        margin-inline: 9.375rem;
+        margin-block: 5rem;
+        h2{
+            font-family: $fontSecundary;
+            font-weight: 500;
+            letter-spacing: 0.188rem;
+        }
+        .contact-description{
+            font-family: $fontPrimary;
+            font-weight: 300;
+            p{
+                margin: 0;
+                margin-top: 0.25rem;
+                color: $colorPrimary;
+            }
+            .rrssig{
+                display: flex;
+                gap: 0.875rem;
+                .flecha{
+                    width: 1.875rem;
+                }
+            }
+        }
+    } 
+}
+.aside-photography{
+    margin-top: 36rem;
+    .line-divider-first{
+        width: all;
+        height: 0.063rem;
+        background-color: #E5E5E5;
+    }
+    .aboutme{
+        margin-inline: 9.375rem;
+        margin-block: 5rem;
+        h2{
+            font-family: $fontSecundary;
+            font-weight: 500;
+            letter-spacing: 0.188rem;
+        }
+        .about-description{
+            font-family: $fontPrimary;
+            font-weight: 300;
+        }
+    }
+    .line-divider-second{
+        margin-top: 6rem;
+        width: all;
+        height: 0.063rem;
+        background-color: #E5E5E5;
+    }
+    .line-divider-third{
+        margin-top: 6rem;
+        width: all;
+        height: 0.063rem;
+        background-color: #E5E5E5;
     }
     .contact{
         margin-inline: 9.375rem;

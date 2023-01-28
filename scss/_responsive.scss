@@ -1,9 +1,24 @@
 //responsive desktop
 @media only screen and (max-width: 1400px){
-    .aside{
-     margin-top: 14rem;
+    .product-modal{
+        .modal-content{
+            margin-top: 1rem;
+            width: 450px;
+            height: 480px;
+            img{
+                object-fit:cover;
+                width: 450px;
+                height: 410px;
+            }
+            .modal-close{
+                top: 16px;
+                right: 322px;
+            }
+        }
     }
-
+    .aside-photography{
+        margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width: 1024px){

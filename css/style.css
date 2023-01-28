@@ -37,7 +37,7 @@ body {
         display: none; }
 
 .container-intro {
-  font-size: 1.625rem;
+  font-size: 2.625rem;
   margin-top: 5rem; }
   .container-intro h1 {
     margin: 0;
@@ -71,40 +71,31 @@ body {
   column-gap: 0.875rem;
   row-gap: 0.938rem;
   margin-inline: 9.375rem;
-  margin-top: 2.8rem;
-  height: 110vh; }
+  margin-top: 2.8rem; }
   .container-grid .card-1 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-2 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-3 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-4 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-5 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-6 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-7 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-8 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
   .container-grid .card-5 {
     padding-top: 2rem; }
   .container-grid .card-6 {
@@ -218,6 +209,7 @@ body {
         filter: grayscale(0);
         -webkit-filter: grayscale(0); }
   .container-grid .image {
+    object-fit: cover;
     width: 100%;
     height: 16.625rem; }
   .container-grid .grid-info {
@@ -300,18 +292,20 @@ body {
   margin-inline: 9.375rem;
   margin-top: 2.8rem;
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 0.625; }
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.875rem;
+  row-gap: 1.4rem;
+  height: 110vh; }
   .galeria a {
     display: block;
-    width: 17.5rem;
+    width: 270px;
     height: 17.5rem;
-    overflow: hidden; }
+    object-fit: cover; }
   .galeria img {
+    object-fit: fill;
     display: block;
-    width: 15.625rem;
-    height: 15.625rem;
-    overflow: hidden; }
+    width: 100%;
+    height: 18rem; }
 
 .galeria-mobile {
   display: none; }
@@ -499,56 +493,103 @@ body {
       .aside-wd .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
-.aside-photography .line-divider,
 .aside-hand-paints .line-divider {
   margin-top: 4.75rem;
   width: all;
   height: 0.063rem;
   background-color: #E5E5E5; }
 
-.aside-photography .aboutme,
 .aside-hand-paints .aboutme {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-photography .aboutme h2,
   .aside-hand-paints .aboutme h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-photography .aboutme .about-description,
   .aside-hand-paints .aboutme .about-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
 
-.aside-photography .contact,
 .aside-hand-paints .contact {
   margin-inline: 9.375rem;
   margin-block: 5rem; }
-  .aside-photography .contact h2,
   .aside-hand-paints .contact h2 {
     font-family: "Josefin Sans", monospace;
     font-weight: 500;
     letter-spacing: 0.188rem; }
-  .aside-photography .contact .contact-description,
   .aside-hand-paints .contact .contact-description {
     font-family: "Roboto", monospace;
     font-weight: 300; }
-    .aside-photography .contact .contact-description p,
     .aside-hand-paints .contact .contact-description p {
       margin: 0;
       margin-top: 0.25rem;
       color: black; }
-    .aside-photography .contact .contact-description .rrssig,
     .aside-hand-paints .contact .contact-description .rrssig {
       display: flex;
       gap: 0.875rem; }
-      .aside-photography .contact .contact-description .rrssig .flecha,
       .aside-hand-paints .contact .contact-description .rrssig .flecha {
         width: 1.875rem; }
 
+.aside-photography {
+  margin-top: 36rem; }
+  .aside-photography .line-divider-first {
+    width: all;
+    height: 0.063rem;
+    background-color: #E5E5E5; }
+  .aside-photography .aboutme {
+    margin-inline: 9.375rem;
+    margin-block: 5rem; }
+    .aside-photography .aboutme h2 {
+      font-family: "Josefin Sans", monospace;
+      font-weight: 500;
+      letter-spacing: 0.188rem; }
+    .aside-photography .aboutme .about-description {
+      font-family: "Roboto", monospace;
+      font-weight: 300; }
+  .aside-photography .line-divider-second {
+    margin-top: 6rem;
+    width: all;
+    height: 0.063rem;
+    background-color: #E5E5E5; }
+  .aside-photography .line-divider-third {
+    margin-top: 6rem;
+    width: all;
+    height: 0.063rem;
+    background-color: #E5E5E5; }
+  .aside-photography .contact {
+    margin-inline: 9.375rem;
+    margin-block: 5rem; }
+    .aside-photography .contact h2 {
+      font-family: "Josefin Sans", monospace;
+      font-weight: 500;
+      letter-spacing: 0.188rem; }
+    .aside-photography .contact .contact-description {
+      font-family: "Roboto", monospace;
+      font-weight: 300; }
+      .aside-photography .contact .contact-description p {
+        margin: 0;
+        margin-top: 0.25rem;
+        color: black; }
+      .aside-photography .contact .contact-description .rrssig {
+        display: flex;
+        gap: 0.875rem; }
+        .aside-photography .contact .contact-description .rrssig .flecha {
+          width: 1.875rem; }
+
 @media only screen and (max-width: 1400px) {
-  .aside {
-    margin-top: 14rem; } }
+  .product-modal .modal-content {
+    margin-top: 1rem;
+    width: 450px;
+    height: 480px; }
+    .product-modal .modal-content img {
+      object-fit: cover;
+      width: 450px;
+      height: 410px; }
+    .product-modal .modal-content .modal-close {
+      top: 16px;
+      right: 322px; }
+  .aside-photography {
+    margin-top: 4rem; } }
 
 @media only screen and (max-width: 1024px) {
   .container-grid {
