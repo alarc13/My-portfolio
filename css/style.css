@@ -602,6 +602,16 @@ body {
       .product-modal .modal-content .description-modal p {
         margin-top: 8px;
         font-size: 1.6rem; }
+  .aside-photography {
+    margin-top: 4rem; } }
+
+@media only screen and (max-width: 1024px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.875rem;
+    margin-inline: 9rem; }
+    .container-grid .image {
+      height: 22.625rem; }
   .product-modal .modal-content {
     margin-top: 4rem;
     width: 40rem;
@@ -623,16 +633,6 @@ body {
       .product-modal .modal-content .description-modal p {
         margin-top: 8px;
         font-size: 1rem; }
-  .aside-photography {
-    margin-top: 4rem; } }
-
-@media only screen and (max-width: 1024px) {
-  .container-grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.875rem;
-    margin-inline: 9rem; }
-    .container-grid .image {
-      height: 22.625rem; }
   .aside-photography {
     margin-top: 168rem; }
   .galeria {
@@ -700,26 +700,22 @@ body {
       -webkit-filter: grayscale(0); }
     .container-grid .image {
       height: 24.625rem; }
-  .product-modal .modal-content .modal-close {
-    right: 246px; }
+  .product-modal .modal-content .description-modal p {
+    margin-top: 0.3rem; }
   .galeria {
     margin-inline: 3rem; }
   .container-paints .description-paint {
     margin-top: 15.625rem; }
-  .aside {
-    margin-top: 90.125rem; }
-    .aside .aboutme {
-      margin-inline: 3rem;
-      margin-block: 5rem; }
-    .aside .contact {
-      margin-inline: 3rem;
-      margin-block: 5rem; }
-  .aside-photography {
-    margin-top: 6rem; }
-    .aside-photography .aboutme,
-    .aside-photography .contact {
-      margin-inline: 3rem;
-      margin-block: 5rem; }
+  .aside .aboutme {
+    margin-inline: 3rem;
+    margin-block: 5rem; }
+  .aside .contact {
+    margin-inline: 3rem;
+    margin-block: 5rem; }
+  .aside-photography .aboutme,
+  .aside-photography .contact {
+    margin-inline: 3rem;
+    margin-block: 5rem; }
   .aside-hand-paints {
     margin-top: 2rem; }
     .aside-hand-paints .aboutme,
@@ -749,16 +745,6 @@ body {
     margin-inline: 2rem; }
     .container-grid .image {
       height: 18rem; }
-  .product-modal .modal-content {
-    margin-top: 2rem;
-    width: 400px;
-    height: 450px; }
-    .product-modal .modal-content img {
-      width: 400px;
-      height: 380px; }
-    .product-modal .modal-content .modal-close {
-      top: 34px;
-      right: 196px; }
   .galeria {
     width: 1.813rem;
     column-gap: 0.875rem;
@@ -768,23 +754,40 @@ body {
       height: 20.5rem;
       padding-bottom: 2.4rem; }
     .galeria .image {
-      height: 20rem; }
-  .aside {
-    margin-top: 66rem; } }
+      height: 20rem; } }
 
 @media (max-width: 580px) {
   .container-grid .image {
     height: 15.625rem; }
-  .product-modal .modal-content .modal-close {
-    top: 34px;
-    right: 98px; }
+  .product-modal .modal-content {
+    margin-top: 4rem;
+    width: 400px;
+    height: 450px; }
+    .product-modal .modal-content img {
+      width: 400px;
+      height: 380px; }
+    .product-modal .modal-content .modal-close {
+      bottom: 23.8rem;
+      left: 23rem;
+      font-size: 2rem; }
+    .product-modal .modal-content .description-modal {
+      margin-left: 0.6rem; }
+      .product-modal .modal-content .description-modal h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0.6rem; }
+      .product-modal .modal-content .description-modal p {
+        font-size: 0.8rem; }
   .galeria {
-    width: 15rem; }
+    width: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.4rem; }
     .galeria a {
-      width: 15rem;
-      height: 20.5rem; }
-    .galeria .image {
-      height: 20.5rem; }
+      width: 250px;
+      height: 17.5rem;
+      padding: 0; }
+    .galeria img {
+      width: 100%;
+      height: 18rem; }
   .modal {
     justify-content: center; }
     .modal img {
@@ -793,10 +796,10 @@ body {
       font-size: 1.8rem; }
   .container-paints .cards-paint .card-paint {
     width: 40%; }
-  .aside {
-    margin-top: 56rem; }
   .container-wd {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .aside-photography {
+    margin-top: 118rem; } }
 
 @media (max-width: 460px) {
   .header-container {
@@ -815,6 +818,8 @@ body {
         display: block; }
   .container-intro {
     font-size: 1.625rem; }
+  .nav-filters {
+    margin-top: 2rem; }
   .container-wd img {
     width: 37.5rem;
     height: 18.75rem; }
@@ -833,36 +838,46 @@ body {
       width: 12rem;
       height: 13.625rem;
       overflow: hidden; }
-  .aside {
-    margin-top: 42em; }
+  .aside .aboutme {
+    margin-top: 28px; }
     .aside .aboutme h2 {
       font-size: 1.2rem; }
     .aside .aboutme .about-description {
       font-size: 0.8rem; }
+  .aside .contact {
+    margin-top: 28px; }
     .aside .contact h2 {
       font-size: 1.2rem; }
     .aside .contact .contact-description {
       font-size: 0.8rem; }
-  .aside-photography,
+  .aside-photography {
+    margin-top: 86rem; }
+    .aside-photography .aboutme .box-about {
+      margin-top: -3rem; }
+    .aside-photography .aboutme h2 {
+      font-size: 1.2rem; }
+    .aside-photography .aboutme .about-description {
+      font-size: 0.8rem;
+      margin-bottom: 0; }
+    .aside-photography .contact .box-contact {
+      margin-top: -3rem; }
+    .aside-photography .contact h2 {
+      font-size: 1.2rem; }
+    .aside-photography .contact .contact-description {
+      font-size: 0.8rem; }
   .aside-hand-paints {
     margin-top: 6rem; }
-    .aside-photography .aboutme .box-about,
     .aside-hand-paints .aboutme .box-about {
       margin-top: -3rem; }
-    .aside-photography .aboutme h2,
     .aside-hand-paints .aboutme h2 {
       font-size: 1.2rem; }
-    .aside-photography .aboutme .about-description,
     .aside-hand-paints .aboutme .about-description {
       font-size: 0.8rem;
       margin-bottom: 0; }
-    .aside-photography .contact .box-contact,
     .aside-hand-paints .contact .box-contact {
       margin-top: -3rem; }
-    .aside-photography .contact h2,
     .aside-hand-paints .contact h2 {
       font-size: 1.2rem; }
-    .aside-photography .contact .contact-description,
     .aside-hand-paints .contact .contact-description {
       font-size: 0.8rem; }
   .aside-wd {
@@ -879,10 +894,7 @@ body {
     .aside-wd .contact h2 {
       font-size: 1.2rem; }
     .aside-wd .contact .contact-description {
-      font-size: 0.8rem; }
-  .product-modal .modal-content .modal-close {
-    top: 32px;
-    right: 38px; } }
+      font-size: 0.8rem; } }
 
 @media (max-width: 375px) {
   .header-container {
@@ -898,12 +910,12 @@ body {
       line-height: normal; }
       .header-container .about .about-link br {
         display: block; }
-  .intro {
-    margin-top: -1.25rem; }
-    .intro h1 {
+  .container-intro {
+    margin-top: 1.6rem; }
+    .container-intro h1 {
       font-size: 2rem; }
-  .nav-filters .filters {
-    margin-top: -2.2rem; }
+  .nav-filters {
+    margin-top: 2rem; }
   .container-wd img {
     width: 37.5rem;
     height: 18.75rem; }
@@ -937,10 +949,11 @@ body {
       width: 320px;
       height: 300px; }
     .product-modal .modal-content .modal-close {
-      top: 5rem;
-      right: 2.5rem; }
+      bottom: 19rem;
+      left: 18.8rem;
+      font-size: 1.4rem; }
     .product-modal .modal-content .description-modal {
-      margin-top: -3px;
+      margin-top: 0.4rem;
       margin-left: 14px; }
       .product-modal .modal-content .description-modal h3 {
         font-size: 0.6rem;
@@ -954,7 +967,8 @@ body {
       width: 50%; }
   .container-paints .description-paint {
     min-width: 15rem; }
-  .aside {
-    margin-top: 30rem; }
+  .aside-photography {
+    margin-top: 55rem; }
   .signing {
+    margin-top: 1rem;
     font-size: 0.7rem; } }
