@@ -7,33 +7,6 @@
             height: 22.625rem;
         }
     }
-    .product-modal{
-        .modal-content {
-            margin-top: 4rem;
-            height: 30rem;
-                img{
-                    height: 26rem;
-                }
-                .modal-close {
-                bottom: 26.25rem;
-                left: 38.125rem;
-                font-size: 2rem;
-            }
-            .description-modal{
-                margin-left: 1rem;
-                h3{
-                    margin: 0;
-                    margin-top: -1.4rem;
-                    font-size: 0.8rem;
-                    letter-spacing: 1.3rem;
-                }
-                p{
-                    margin-top: 0.5rem;
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
     .galeria{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2.875rem;
@@ -92,15 +65,7 @@
         height: 24.625rem;
     }
 }
-.product-modal{
-    .modal-content{
-        .description-modal{
-            p{
-                margin-top: 0.3rem;
-            }
-        }
-    } 
-}
+
 .galeria{
     margin-inline: 3rem;
 }
@@ -179,7 +144,6 @@
             height: 20rem;
         }
     }
-
 }
 
 @media (max-width: 580px) {
@@ -189,30 +153,22 @@
         }  
    }
    .product-modal{
+    .modal-close{
+        top: 2rem;
+        left: 13.5rem;
+    }
     .modal-content{
-        margin-top: 4rem;
-        height: 28.125rem;
+        width: 80%;
         img{
-            height: 23.75rem;
-        }
-        .modal-close {
-            bottom: 23.8rem;
-            left: 23rem;
-            font-size: 2rem;
+            width: 100%;
         }
         .description-modal{
-            margin-left: 0.6rem;
-            h3{
-                font-size: 0.8rem;
-                letter-spacing: 0.6rem;
-            }
             p{
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
         }
-
     }
-}
+   }
   .galeria{
         a{
             height: 17.5rem;
@@ -285,6 +241,24 @@
         .image{
             height: 11.625rem;
             } 
+    }
+    .product-modal{
+        .modal-close{
+            font-size: 1.5rem;
+            top: 1.7rem;
+            left: 10.625rem;
+        }
+        .modal-content{
+            .description-modal{
+                h3{
+                    font-size: 0.8rem;
+                    letter-spacing: 0.4rem;
+                }
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+        }
     }
     .galeria{
             a{
@@ -467,23 +441,16 @@
         }
     }
     .product-modal{
+        .modal-close{
+            font-size: 1.5rem;
+            top: 1.91rem;
+            left: 8.625rem;
+        }
         .modal-content{
-            margin-top: 5rem;
-            height: 21.875rem;
-            img{
-                height: 18.75rem;
-            }
-            .modal-close{
-                bottom: 19rem;
-                left: 18.8rem;
-                font-size: 1.4rem;
-            }
             .description-modal{
-                margin-top: 0.4rem;
-                margin-left: 0.875rem;
                 h3{
-                    font-size: 0.6rem;
-                    letter-spacing: 0.2rem;
+                    font-size: 0.7rem;
+                    letter-spacing: 0.24rem;
                 }
                 p{
                     margin-top: 0.188rem;

@@ -237,8 +237,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #1e1e1e40;
-  transition: all 0.7s;
-  border: 2px red solid; }
+  transition: all 0.7s; }
   .product-modal:target {
     visibility: visible;
     opacity: 1; }
@@ -246,8 +245,8 @@ body {
     position: relative;
     color: black;
     text-shadow: 0 0 0.04em white;
-    top: 40px;
-    left: 260px;
+    top: 2.5rem;
+    left: 16.25rem;
     font-size: 1.8rem; }
   .product-modal .modal-content {
     background-color: white;
@@ -255,7 +254,7 @@ body {
     -moz-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87);
     box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87); }
     .product-modal .modal-content .description-modal {
-      padding: 10px; }
+      padding: 0.625rem; }
       .product-modal .modal-content .description-modal h3 {
         margin: 0;
         font-family: "Josefin Sans", monospace;
@@ -573,25 +572,6 @@ body {
     margin-inline: 9rem; }
     .container-grid .image {
       height: 22.625rem; }
-  .product-modal .modal-content {
-    margin-top: 4rem;
-    height: 30rem; }
-    .product-modal .modal-content img {
-      height: 26rem; }
-    .product-modal .modal-content .modal-close {
-      bottom: 26.25rem;
-      left: 38.125rem;
-      font-size: 2rem; }
-    .product-modal .modal-content .description-modal {
-      margin-left: 1rem; }
-      .product-modal .modal-content .description-modal h3 {
-        margin: 0;
-        margin-top: -1.4rem;
-        font-size: 0.8rem;
-        letter-spacing: 1.3rem; }
-      .product-modal .modal-content .description-modal p {
-        margin-top: 0.5rem;
-        font-size: 1rem; }
   .galeria {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.875rem; }
@@ -651,8 +631,6 @@ body {
       -webkit-filter: grayscale(0); }
     .container-grid .image {
       height: 24.625rem; }
-  .product-modal .modal-content .description-modal p {
-    margin-top: 0.3rem; }
   .galeria {
     margin-inline: 3rem; }
   .container-paints .description-paint {
@@ -708,22 +686,15 @@ body {
 @media (max-width: 580px) {
   .container-grid .image {
     height: 15.625rem; }
+  .product-modal .modal-close {
+    top: 2rem;
+    left: 13.5rem; }
   .product-modal .modal-content {
-    margin-top: 4rem;
-    height: 28.125rem; }
+    width: 80%; }
     .product-modal .modal-content img {
-      height: 23.75rem; }
-    .product-modal .modal-content .modal-close {
-      bottom: 23.8rem;
-      left: 23rem;
-      font-size: 2rem; }
-    .product-modal .modal-content .description-modal {
-      margin-left: 0.6rem; }
-      .product-modal .modal-content .description-modal h3 {
-        font-size: 0.8rem;
-        letter-spacing: 0.6rem; }
-      .product-modal .modal-content .description-modal p {
-        font-size: 0.8rem; }
+      width: 100%; }
+    .product-modal .modal-content .description-modal p {
+      font-size: 0.9rem; }
   .galeria a {
     height: 17.5rem;
     padding: 0; }
@@ -764,6 +735,15 @@ body {
     height: 18.75rem; }
   .container-grid .image {
     height: 11.625rem; }
+  .product-modal .modal-close {
+    font-size: 1.5rem;
+    top: 1.7rem;
+    left: 10.625rem; }
+  .product-modal .modal-content .description-modal h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem; }
+  .product-modal .modal-content .description-modal p {
+    font-size: 0.7rem; }
   .galeria a {
     height: 14.5rem;
     padding-bottom: 0.625rem; }
@@ -867,24 +847,16 @@ body {
       width: 62%; }
     .modal a {
       font-size: 1.8rem; }
-  .product-modal .modal-content {
-    margin-top: 5rem;
-    height: 21.875rem; }
-    .product-modal .modal-content img {
-      height: 18.75rem; }
-    .product-modal .modal-content .modal-close {
-      bottom: 19rem;
-      left: 18.8rem;
-      font-size: 1.4rem; }
-    .product-modal .modal-content .description-modal {
-      margin-top: 0.4rem;
-      margin-left: 0.875rem; }
-      .product-modal .modal-content .description-modal h3 {
-        font-size: 0.6rem;
-        letter-spacing: 0.2rem; }
-      .product-modal .modal-content .description-modal p {
-        margin-top: 0.188rem;
-        font-size: 0.6rem; }
+  .product-modal .modal-close {
+    font-size: 1.5rem;
+    top: 1.91rem;
+    left: 8.625rem; }
+  .product-modal .modal-content .description-modal h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.24rem; }
+  .product-modal .modal-content .description-modal p {
+    margin-top: 0.188rem;
+    font-size: 0.6rem; }
   .container-paints .cards-paint {
     margin-bottom: -1.875rem; }
     .container-paints .cards-paint .card-paint {
