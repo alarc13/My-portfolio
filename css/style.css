@@ -237,34 +237,27 @@ body {
   flex-direction: column;
   align-items: center;
   background: #1e1e1e40;
-  transition: all 0.7s; }
+  transition: all 0.7s;
+  border: 2px red solid; }
   .product-modal:target {
     visibility: visible;
     opacity: 1; }
+  .product-modal .modal-close {
+    position: relative;
+    color: black;
+    text-shadow: 0 0 0.04em white;
+    top: 40px;
+    left: 260px;
+    font-size: 1.8rem; }
   .product-modal .modal-content {
-    margin-top: 3.875rem;
-    height: 36.25rem;
-    background: white;
+    background-color: white;
     -webkit-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87);
     -moz-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87);
     box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87); }
-    .product-modal .modal-content img {
-      width: 100%;
-      object-fit: cover;
-      height: 31.25rem; }
-    .product-modal .modal-content .modal-close {
-      bottom: 31.25rem;
-      left: 31.875rem;
-      color: black;
-      font-size: 2em;
-      position: relative;
-      text-shadow: 0 0 0.04em white;
-      line-height: 1; }
     .product-modal .modal-content .description-modal {
-      margin-left: 1.25rem; }
+      padding: 10px; }
       .product-modal .modal-content .description-modal h3 {
         margin: 0;
-        margin-top: -1.25rem;
         font-family: "Josefin Sans", monospace;
         font-weight: 700;
         text-transform: uppercase;
@@ -573,33 +566,6 @@ body {
         .aside-photography .contact .contact-description .rrssig .flecha {
           width: 1.875rem; }
 
-@media only screen and (max-width: 1400px) {
-  .product-modal .modal-content {
-    margin-top: 10rem;
-    width: 70rem;
-    height: 55rem; }
-    .product-modal .modal-content img {
-      width: 100%;
-      height: 46rem; }
-    .product-modal .modal-content .modal-close {
-      bottom: 45.625rem;
-      left: 66.875rem;
-      color: black;
-      font-size: 3rem;
-      position: relative;
-      text-shadow: 0 0 0.04em white;
-      line-height: 1; }
-    .product-modal .modal-content .description-modal {
-      margin-left: 2rem; }
-      .product-modal .modal-content .description-modal h3 {
-        margin: 0;
-        margin-top: -1rem;
-        font-size: 1.6rem;
-        letter-spacing: 1.3rem; }
-      .product-modal .modal-content .description-modal p {
-        margin-top: 0.5rem;
-        font-size: 1.6rem; } }
-
 @media only screen and (max-width: 1024px) {
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -609,10 +575,8 @@ body {
       height: 22.625rem; }
   .product-modal .modal-content {
     margin-top: 4rem;
-    width: 40rem;
     height: 30rem; }
     .product-modal .modal-content img {
-      width: 100%;
       height: 26rem; }
     .product-modal .modal-content .modal-close {
       bottom: 26.25rem;
@@ -746,10 +710,8 @@ body {
     height: 15.625rem; }
   .product-modal .modal-content {
     margin-top: 4rem;
-    width: 25rem;
     height: 28.125rem; }
     .product-modal .modal-content img {
-      width: 25rem;
       height: 23.75rem; }
     .product-modal .modal-content .modal-close {
       bottom: 23.8rem;
@@ -907,10 +869,8 @@ body {
       font-size: 1.8rem; }
   .product-modal .modal-content {
     margin-top: 5rem;
-    width: 20rem;
     height: 21.875rem; }
     .product-modal .modal-content img {
-      width: 20rem;
       height: 18.75rem; }
     .product-modal .modal-content .modal-close {
       bottom: 19rem;
