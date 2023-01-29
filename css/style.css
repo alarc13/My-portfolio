@@ -319,7 +319,6 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
-  /*display none quita la pripiedad, no es visible pero sigue en el dom. */
   justify-content: center;
   align-items: center; }
   .modal a {
@@ -640,7 +639,6 @@ body {
   .container-paints .description-paint {
     margin-top: 18.75rem; } }
 
-/*responsive tablet */
 @media only screen and (max-width: 875px) {
   .header-container {
     margin-block-start: 2rem;

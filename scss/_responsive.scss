@@ -1,4 +1,3 @@
-//responsive desktop
 @media only screen and (max-width: 1400px){
     .product-modal{
         .modal-content {
@@ -92,7 +91,6 @@
     }
 }
 
-/*responsive tablet */
 @media only screen and (max-width: 875px) {
     .header-container{
         margin-block-start: 2rem;
@@ -285,7 +283,6 @@
         overflow: hidden;
     }
 }
-//responsive mobile
 @media (max-width: 460px) {
     .header-container{
         margin-inline: 2rem;
