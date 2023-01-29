@@ -1,18 +1,64 @@
 //responsive desktop
 @media only screen and (max-width: 1400px){
     .product-modal{
-        .modal-content{
-            margin-top: 1rem;
-            width: 450px;
-            height: 480px;
-            img{
-                object-fit:cover;
-                width: 450px;
-                height: 410px;
+        .modal-content {
+            margin-top: 10rem;
+            width: 70rem;
+            height: 55rem;
+                img{
+                    width: 100%;
+                    height: 46rem;
+                }
+                .modal-close {
+                bottom: 730px;
+                left: 1070px;
+                color: darken(rgb(0, 0, 0), 10%);
+                font-size: 3rem;
+                position: relative;
+                text-shadow:  0 0 0.04em rgb(255, 255, 255);
+                line-height: 1;
             }
-            .modal-close{
-                top: 16px;
-                right: 322px;
+            .description-modal{
+                margin-left: 2rem;
+                h3{
+                    margin: 0;
+                    margin-top: -16px;
+                    font-size: 1.6rem;
+                    letter-spacing: 1.3rem;
+                }
+                p{
+                    margin-top: 8px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .product-modal{
+        .modal-content {
+            margin-top: 4rem;
+            width: 40rem;
+            height: 30rem;
+                img{
+                    width: 100%;
+                    height: 26rem;
+                }
+                .modal-close {
+                bottom: 420px;
+                left: 610px;
+                font-size: 2rem;
+            }
+            .description-modal{
+                margin-left: 1rem;
+                h3{
+                    margin: 0;
+                    margin-top: -1.4rem;
+                    font-size: 0.8rem;
+                    letter-spacing: 1.3rem;
+                }
+                p{
+                    margin-top: 8px;
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -30,35 +76,9 @@
             height: 22.625rem;
         }
     }
-    .product-modal{
-        .modal-content{
-            margin-top: 1rem;
-            width: 400px;
-            height: 400px;
-            img{
-                width: 400px;
-                height: 336px;
-            }
-            .modal-close{
-                top: 16px;
-                right: 322px;
-            }
-            .description-modal{
-                margin-top: 5px;
-                margin-left: 10px;
-                h3{
-                    font-weight: 700;
-                    font-size: 0.8rem;
-                    letter-spacing: 0.8rem;
-                }
-                p{
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
-    .aside{
-        margin-top: 82rem;
+    
+    .aside-photography{
+        margin-top: 168rem;
     }
     .galeria{
         width: 22rem;

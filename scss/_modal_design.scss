@@ -15,6 +15,7 @@
     background: #1e1e1e40;
     transition: all 0.7s;
     height: 1900px;
+    
     .modal-content {
         margin-top: 62px;
         height: 580px;
@@ -22,17 +23,17 @@
         -webkit-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
         -moz-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
         box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
-        overflow: hidden;
             img{
+                width: 100%;
+                object-fit: cover;
                 height: 500px;
             }
             .modal-close {
+            bottom: 500px;
+            left: 510px;
             color: darken(rgb(0, 0, 0), 10%);
             font-size: 2em;
-            position: absolute;
-            top: 66px;
-            right: 480px;
-            text-decoration: none;
+            position: relative;
             text-shadow:  0 0 0.04em rgb(255, 255, 255);
             line-height: 1;
         }
@@ -40,7 +41,7 @@
             margin-left: 20px;
             h3{
                 margin: 0;
-                margin-top: 12px;
+                margin-top: -20px;
                 font-family: $fontSecundary;
                 font-weight: 700;
                 text-transform: uppercase;
