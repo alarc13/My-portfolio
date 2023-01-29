@@ -14,23 +14,22 @@
     align-items: center;
     background: #1e1e1e40;
     transition: all 0.7s;
-    height: 1900px;
     
     .modal-content {
-        margin-top: 62px;
-        height: 580px;
+        margin-top: 3.875rem;
+        height: 36.25rem;
         background: rgb(255, 255, 255);
-        -webkit-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
-        -moz-box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
-        box-shadow: 0px 2px 18px -5px rgba(0,0,0,0.87);
+        -webkit-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0,0,0,0.87);
+        -moz-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0,0,0,0.87);
+        box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0,0,0,0.87);
             img{
                 width: 100%;
                 object-fit: cover;
-                height: 500px;
+                height: 31.25rem;
             }
             .modal-close {
-            bottom: 500px;
-            left: 510px;
+            bottom: 31.25rem;
+            left: 31.875rem;
             color: darken(rgb(0, 0, 0), 10%);
             font-size: 2em;
             position: relative;
@@ -38,10 +37,10 @@
             line-height: 1;
         }
         .description-modal{
-            margin-left: 20px;
+            margin-left: 1.25rem;
             h3{
                 margin: 0;
-                margin-top: -20px;
+                margin-top: -1.25rem;
                 font-family: $fontSecundary;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -50,7 +49,7 @@
             }
             p{
                 margin: 0;
-                margin-top: 8px;
+                margin-top: 0.5rem;
                 font-family: $fontPrimary;
                 font-weight: 300;
                 font-size: 1rem;

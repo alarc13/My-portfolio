@@ -237,35 +237,34 @@ body {
   flex-direction: column;
   align-items: center;
   background: #1e1e1e40;
-  transition: all 0.7s;
-  height: 1900px; }
+  transition: all 0.7s; }
   .product-modal:target {
     visibility: visible;
     opacity: 1; }
   .product-modal .modal-content {
-    margin-top: 62px;
-    height: 580px;
+    margin-top: 3.875rem;
+    height: 36.25rem;
     background: white;
-    -webkit-box-shadow: 0px 2px 18px -5px rgba(0, 0, 0, 0.87);
-    -moz-box-shadow: 0px 2px 18px -5px rgba(0, 0, 0, 0.87);
-    box-shadow: 0px 2px 18px -5px rgba(0, 0, 0, 0.87); }
+    -webkit-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87);
+    box-shadow: 0 0.125rem 1.125rem -0.313rem rgba(0, 0, 0, 0.87); }
     .product-modal .modal-content img {
       width: 100%;
       object-fit: cover;
-      height: 500px; }
+      height: 31.25rem; }
     .product-modal .modal-content .modal-close {
-      bottom: 500px;
-      left: 510px;
+      bottom: 31.25rem;
+      left: 31.875rem;
       color: black;
       font-size: 2em;
       position: relative;
       text-shadow: 0 0 0.04em white;
       line-height: 1; }
     .product-modal .modal-content .description-modal {
-      margin-left: 20px; }
+      margin-left: 1.25rem; }
       .product-modal .modal-content .description-modal h3 {
         margin: 0;
-        margin-top: -20px;
+        margin-top: -1.25rem;
         font-family: "Josefin Sans", monospace;
         font-weight: 700;
         text-transform: uppercase;
@@ -273,7 +272,7 @@ body {
         letter-spacing: 0.8rem; }
       .product-modal .modal-content .description-modal p {
         margin: 0;
-        margin-top: 8px;
+        margin-top: 0.5rem;
         font-family: "Roboto", monospace;
         font-weight: 300;
         font-size: 1rem; }
@@ -362,7 +361,7 @@ body {
         height: 100%;
         border-radius: 0.625rem;
         object-fit: cover;
-        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47); }
+        box-shadow: 0 0 0.313rem 0 rgba(81, 81, 81, 0.47); }
   .container-paints #item-1:checked ~ .cards-paint #paint-3, .container-paints #item-2:checked ~ .cards-paint #paint-1, .container-paints #item-3:checked ~ .cards-paint #paint-2 {
     transform: translatex(-40%) scale(0.8);
     opacity: .4;
@@ -380,7 +379,7 @@ body {
     border-radius: 0.5rem;
     min-width: 20rem;
     padding: 1rem 0.625rem;
-    box-shadow: 0px 0px 1px 0px rgba(81, 81, 81, 0.47); }
+    box-shadow: 0 0 0.063rem 0 rgba(81, 81, 81, 0.47); }
     .container-paints .description-paint .description-part {
       position: relative;
       display: flex;
@@ -584,8 +583,8 @@ body {
       width: 100%;
       height: 46rem; }
     .product-modal .modal-content .modal-close {
-      bottom: 730px;
-      left: 1070px;
+      bottom: 45.625rem;
+      left: 66.875rem;
       color: black;
       font-size: 3rem;
       position: relative;
@@ -595,11 +594,11 @@ body {
       margin-left: 2rem; }
       .product-modal .modal-content .description-modal h3 {
         margin: 0;
-        margin-top: -16px;
+        margin-top: -1rem;
         font-size: 1.6rem;
         letter-spacing: 1.3rem; }
       .product-modal .modal-content .description-modal p {
-        margin-top: 8px;
+        margin-top: 0.5rem;
         font-size: 1.6rem; } }
 
 @media only screen and (max-width: 1024px) {
@@ -617,8 +616,8 @@ body {
       width: 100%;
       height: 26rem; }
     .product-modal .modal-content .modal-close {
-      bottom: 420px;
-      left: 610px;
+      bottom: 26.25rem;
+      left: 38.125rem;
       font-size: 2rem; }
     .product-modal .modal-content .description-modal {
       margin-left: 1rem; }
@@ -628,7 +627,7 @@ body {
         font-size: 0.8rem;
         letter-spacing: 1.3rem; }
       .product-modal .modal-content .description-modal p {
-        margin-top: 8px;
+        margin-top: 0.5rem;
         font-size: 1rem; }
   .galeria {
     grid-template-columns: repeat(2, 1fr);
@@ -749,11 +748,11 @@ body {
     height: 15.625rem; }
   .product-modal .modal-content {
     margin-top: 4rem;
-    width: 400px;
-    height: 450px; }
+    width: 25rem;
+    height: 28.125rem; }
     .product-modal .modal-content img {
-      width: 400px;
-      height: 380px; }
+      width: 25rem;
+      height: 23.75rem; }
     .product-modal .modal-content .modal-close {
       bottom: 23.8rem;
       left: 23rem;
@@ -807,17 +806,17 @@ body {
     height: 11.625rem; }
   .galeria a {
     height: 14.5rem;
-    padding-bottom: 10px; }
+    padding-bottom: 0.625rem; }
   .galeria img {
     height: 14.625rem; }
   .aside .aboutme {
-    margin-top: 28px; }
+    margin-top: 1.75rem; }
     .aside .aboutme h2 {
       font-size: 1.2rem; }
     .aside .aboutme .about-description {
       font-size: 0.8rem; }
   .aside .contact {
-    margin-top: 28px; }
+    margin-top: 1.75rem; }
     .aside .contact h2 {
       font-size: 1.2rem; }
     .aside .contact .contact-description {
@@ -899,7 +898,7 @@ body {
     margin-top: 1.4rem; }
     .galeria a {
       height: 10rem;
-      padding-bottom: 6px; }
+      padding-bottom: 0.375rem; }
     .galeria img {
       height: 10rem; }
   .modal {
@@ -910,23 +909,23 @@ body {
       font-size: 1.8rem; }
   .product-modal .modal-content {
     margin-top: 5rem;
-    width: 320px;
-    height: 350px; }
+    width: 20rem;
+    height: 21.875rem; }
     .product-modal .modal-content img {
-      width: 320px;
-      height: 300px; }
+      width: 20rem;
+      height: 18.75rem; }
     .product-modal .modal-content .modal-close {
       bottom: 19rem;
       left: 18.8rem;
       font-size: 1.4rem; }
     .product-modal .modal-content .description-modal {
       margin-top: 0.4rem;
-      margin-left: 14px; }
+      margin-left: 0.875rem; }
       .product-modal .modal-content .description-modal h3 {
         font-size: 0.6rem;
         letter-spacing: 0.2rem; }
       .product-modal .modal-content .description-modal p {
-        margin-top: 3px;
+        margin-top: 0.188rem;
         font-size: 0.6rem; }
   .container-paints .cards-paint {
     margin-bottom: -1.875rem; }
