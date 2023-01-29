@@ -288,17 +288,16 @@ body {
     height: 35.75rem; }
 
 .galeria {
-  width: 2.813rem;
-  margin-inline: 9.375rem;
-  margin-top: 2.8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 0.875rem;
   row-gap: 1.4rem;
-  height: 110vh; }
+  margin-inline: 9.375rem;
+  margin-top: 2.8rem; }
   .galeria a {
-    display: block;
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 17.5rem;
     object-fit: cover; }
   .galeria img {
@@ -531,7 +530,7 @@ body {
         width: 1.875rem; }
 
 .aside-photography {
-  margin-top: 36rem; }
+  margin-top: 4rem; }
   .aside-photography .line-divider-first {
     width: all;
     height: 0.063rem;
@@ -601,9 +600,7 @@ body {
         letter-spacing: 1.3rem; }
       .product-modal .modal-content .description-modal p {
         margin-top: 8px;
-        font-size: 1.6rem; }
-  .aside-photography {
-    margin-top: 4rem; } }
+        font-size: 1.6rem; } }
 
 @media only screen and (max-width: 1024px) {
   .container-grid {
@@ -633,20 +630,13 @@ body {
       .product-modal .modal-content .description-modal p {
         margin-top: 8px;
         font-size: 1rem; }
-  .aside-photography {
-    margin-top: 168rem; }
   .galeria {
-    width: 22rem;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.875rem; }
     .galeria a {
-      display: inline;
-      width: 22rem;
       height: 22rem;
       padding-bottom: 2rem; }
     .galeria img {
-      display: inline;
-      width: 22rem;
       height: 22rem; }
   .container-paints .description-paint {
     margin-top: 18.75rem; } }
@@ -746,11 +736,9 @@ body {
     .container-grid .image {
       height: 18rem; }
   .galeria {
-    width: 1.813rem;
     column-gap: 0.875rem;
     margin-inline: 2rem; }
     .galeria a {
-      width: 21.5rem;
       height: 20.5rem;
       padding-bottom: 2.4rem; }
     .galeria .image {
@@ -777,17 +765,11 @@ body {
         letter-spacing: 0.6rem; }
       .product-modal .modal-content .description-modal p {
         font-size: 0.8rem; }
-  .galeria {
-    width: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 1.4rem; }
-    .galeria a {
-      width: 250px;
-      height: 17.5rem;
-      padding: 0; }
-    .galeria img {
-      width: 100%;
-      height: 18rem; }
+  .galeria a {
+    height: 17.5rem;
+    padding: 0; }
+  .galeria img {
+    height: 18rem; }
   .modal {
     justify-content: center; }
     .modal img {
@@ -797,9 +779,7 @@ body {
   .container-paints .cards-paint .card-paint {
     width: 40%; }
   .container-wd {
-    overflow: hidden; }
-  .aside-photography {
-    margin-top: 118rem; } }
+    overflow: hidden; } }
 
 @media (max-width: 460px) {
   .header-container {
@@ -825,19 +805,11 @@ body {
     height: 18.75rem; }
   .container-grid .image {
     height: 11.625rem; }
-  .galeria {
-    width: 0;
-    grid-template-columns: repeat(2, 0.5fr);
-    column-gap: 10px; }
-    .galeria a {
-      width: 12rem;
-      height: 13.5rem;
-      overflow: hidden;
-      padding-bottom: 10px; }
-    .galeria img {
-      width: 12rem;
-      height: 13.625rem;
-      overflow: hidden; }
+  .galeria a {
+    height: 14.5rem;
+    padding-bottom: 10px; }
+  .galeria img {
+    height: 14.625rem; }
   .aside .aboutme {
     margin-top: 28px; }
     .aside .aboutme h2 {
@@ -850,21 +822,19 @@ body {
       font-size: 1.2rem; }
     .aside .contact .contact-description {
       font-size: 0.8rem; }
-  .aside-photography {
-    margin-top: 86rem; }
-    .aside-photography .aboutme .box-about {
-      margin-top: -3rem; }
-    .aside-photography .aboutme h2 {
-      font-size: 1.2rem; }
-    .aside-photography .aboutme .about-description {
-      font-size: 0.8rem;
-      margin-bottom: 0; }
-    .aside-photography .contact .box-contact {
-      margin-top: -3rem; }
-    .aside-photography .contact h2 {
-      font-size: 1.2rem; }
-    .aside-photography .contact .contact-description {
-      font-size: 0.8rem; }
+  .aside-photography .aboutme .box-about {
+    margin-top: -3rem; }
+  .aside-photography .aboutme h2 {
+    font-size: 1.2rem; }
+  .aside-photography .aboutme .about-description {
+    font-size: 0.8rem;
+    margin-bottom: 0; }
+  .aside-photography .contact .box-contact {
+    margin-top: -3rem; }
+  .aside-photography .contact h2 {
+    font-size: 1.2rem; }
+  .aside-photography .contact .contact-description {
+    font-size: 0.8rem; }
   .aside-hand-paints {
     margin-top: 6rem; }
     .aside-hand-paints .aboutme .box-about {
@@ -896,7 +866,7 @@ body {
     .aside-wd .contact .contact-description {
       font-size: 0.8rem; } }
 
-@media (max-width: 375px) {
+@media (max-width: 377px) {
   .header-container {
     margin-top: 2rem; }
     .header-container .name-info .brand .author {
@@ -926,14 +896,11 @@ body {
   .container-grid .grid-info .description-grid {
     font-size: 0.68rem; }
   .galeria {
-    margin-top: 1.4rem;
-    column-gap: 6px; }
+    margin-top: 1.4rem; }
     .galeria a {
-      width: 9.4rem;
       height: 10rem;
       padding-bottom: 6px; }
     .galeria img {
-      width: 9.4rem;
       height: 10rem; }
   .modal {
     justify-content: center; }
@@ -967,8 +934,6 @@ body {
       width: 50%; }
   .container-paints .description-paint {
     min-width: 15rem; }
-  .aside-photography {
-    margin-top: 55rem; }
   .signing {
     margin-top: 1rem;
     font-size: 0.7rem; } }
